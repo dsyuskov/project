@@ -19,7 +19,7 @@ module.exports = {
             filename: 'index.html',
             chunks: ['index'],
             template: PATHS.source+'/pages/index.pug',
-        }),  
+        }),
     ],
     module:{
         rules: [
@@ -31,13 +31,25 @@ module.exports = {
                 }
             },
             {
+                test: /\.(jpg|png|svg)$/,
+                loader: 'file-loader', 
+                options: {
+                    name: 'images/[name].[ext]'
+                }               
+            },
+            {
+                test: /\.(eot|ttf|woff|woff2)$/,
+                loader: 'file-loader?name=./fonts/[name].[ext]'
+            },
+            {
                 test: /\.scss$/,                          
                 use: [
                     'style-loader',
                     'css-loader',
                     'sass-loader'
                 ]
-            }
+            },            
         ]
     }
 };
+   
