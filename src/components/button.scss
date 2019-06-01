@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Montserrat Black';
+    src: url("../fonts/Montserrat/Montserrat-Bold.ttf");   
+}
+$color-gradient: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+
+.button{    
+    padding: 0;
+    border: none;    
+    font-family: 'Montserrat Black', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 22px;
+    height: 44px;  
+    letter-spacing: -0.6px;       
+}
+
+.button:hover{
+    opacity: 0.5;
+}
+.button_full{
+    width: 99px;  
+    background: $color-gradient;
+}
+.button_arrow{
+    width: 320px;    
+    align-items: center;
+    text-align: center;
+    background: url("../images/arrow_forward.svg") no-repeat 290px 50%,                
+                $color-gradient;     
+
+}
