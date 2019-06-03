@@ -1,3 +1,17 @@
-h1{
-    color: green;
+@import '../fonts/Montserrat/Montserrat.css';
+@font-face{
+    font-family: 'Quicksand';
+    src: url('../fonts/Quicksand/quicksandregular.ttf');
+    src: url('../fonts/Quicksand/quicksandregular.woff');
+    font-weight: normal;
+    font-style: normal;
 }
+
+@font-face{
+    font-family: 'Quicksand';
+    src: url('../fonts/Quicksand/quicksandbold.ttf');
+    src: url('../fonts/Quicksand/quicksandbold.woff');
+    font-weight: bold;
+    font-style: normal;
+}
+@import '../components/reg-account/reg-account.scss';

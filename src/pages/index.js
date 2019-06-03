@@ -1,3 +1,3 @@
 import './index.scss';
-import '../components/buttons/default-button/default-button.js';
+import '../components/reg-account/reg-account.js'
    

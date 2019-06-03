@@ -1,0 +1,37 @@
+@import '../radio-button/radio-button.scss';
+.reg-account{
+    padding:  40px 30px;
+    font-size: 10px;    
+    width: 320px;
+    height: 646px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius:  4px;
+}
+.reg-account h1{    
+    box-sizing: border-box;
+    width: 320px;
+    height: 30px;
+    margin: 0;
+    line-height: 30px;
+    font-size: 24px;    
+    font-family: 'Montserratbold';        
+    margin-bottom: 10px;    
+}
+
+.default-input{    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    width: 320px;   
+    height: 44px;
+    box-sizing: border-box;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;    
+    margin-top: 10px;
+    padding: 13px 15px;    
+}
+.pos{
+    margin-top: 10px;
+}
