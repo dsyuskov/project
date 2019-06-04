@@ -1,0 +1,33 @@
+@mixin button-reset{
+    padding: 0;
+    border: none;    
+}
+@mixin button-font {
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+}
+
+.button{
+    @include button-reset;
+    @include button-font;
+    border-radius: 22px;
+    height: 44px;
+    width: 99px;    
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+.button:hover{
+    opacity: 0.5;
+}
+
+.button-arrow{        
+    width: 320px;        
+    vertical-align: middle;   
+    background:  url('../images/arrow_forward.svg') 96% 50% no-repeat,
+                 linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}

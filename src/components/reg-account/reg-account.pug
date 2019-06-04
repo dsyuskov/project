@@ -1,9 +1,17 @@
 div.reg-account    
     h1 Регистрация аккаунта
-    input.default-input(type="text" placeholder="Имя")
-    input.default-input(type="text" placeholder="Фамилия")
+    input.input.reg-account__input(type="text" placeholder="Имя")
+    input.input.reg-account__input(type="text" placeholder="Фамилия")
     include ../radio-button/radio-button.pug   
-    .pos 
-        +radio-button('Мужчина')    
-        +radio-button('Женщина')
-        
+    .reg-account__sex
+        +radio-button('sex','Мужчина')    
+        +radio-button('sex','Женщина')
+    h2 Дата рождения
+    input.input.reg-account__input(type="text" placeholder="ДД.ММ.ГГГГ")
+    h2 Данные для входа в сервис
+    input.input.reg-account__input(type="email" placeholder="Email")
+    input.input.reg-account__input(type="password" placeholder="Пароль")
+    include ../toggle-button/toggle-button.pug
+    +toggle-button('Получать спецпредложения')      
+    button.button.button-arrow.reg-account__button-arrow(type='button') Перейти к оплате
+    
