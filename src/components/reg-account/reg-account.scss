@@ -2,34 +2,18 @@
 @import '../buttons/radio-button/radio-button.scss';
 @import '../buttons/toggle-button/toggle-button.scss';
 @import '../input/input.scss';
+@import '../common.scss';
+
 .reg-account{
-    padding:  40px 30px;
-    font-size: 10px;    
+    @include box;
     width: 318px;   
-    height: 564px; 
-    border: 1px solid rgba(0, 0, 0, 0.12);
-    border-radius:  4px;
-    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    height: 564px;     
 }
 .reg-account h1{    
-    font-family: 'Montserrat';   
-    font-weight: bold;
-    box-sizing: border-box;    
-    height: 30px;    
-    margin: 0;    
-    line-height: 30px;
-    font-size: 24px;              
     margin-bottom: 20px;  
-    letter-spacing: -0.6px;  
 }
 
-.reg-account h2{    
-    box-sizing: border-box;        
-    height: 15px;    
-    line-height: 15px;
-    font-size: 12px;    
-    font-family: 'Montserrat';            
-    text-transform: uppercase;
+.reg-account h2{        
     margin-bottom: 5px;
 }
 .reg-account__input{

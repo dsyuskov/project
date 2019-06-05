@@ -1,17 +1,6 @@
 @import '../fonts/Montserrat/Montserrat.css';
-@font-face{
-    font-family: 'Quicksand';
-    src: url('../fonts/Quicksand/quicksandregular.ttf');
-    src: url('../fonts/Quicksand/quicksandregular.woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face{
-    font-family: 'Quicksand';
-    src: url('../fonts/Quicksand/quicksandbold.ttf');
-    src: url('../fonts/Quicksand/quicksandbold.woff');
-    font-weight: bold;
-    font-style: normal;
-}
 @import '../components/reg-account/reg-account.scss';
+@import '../components/find-number/find-number.scss';
+//@import '../components/dropdown/date-dropdown/sass/datepicker.scss';
+//@import '../components/dropdown/date-dropdown/datepicker.scss';
+@import '../components/dropdown/date-dropdown/temp.scss';

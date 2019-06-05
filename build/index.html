@@ -5,31 +5,14 @@
   <title>Hello World</title>
 </head>
 <body>    
-  <div class="reg-account">   
-    <h1>Регистрация аккаунта</h1>
-    <input class="input reg-account__input" type="text" placeholder="Имя">
-    <input class="input reg-account__input" type="text" placeholder="Фамилия">
-    <div class="reg-account__sex">
-          <label class="container">Мужчина
-            <input class="radio-button" type="radio" name="sex" checked><span class="checkmark"></span>
-          </label>
-          <label class="container">Женщина
-            <input class="radio-button" type="radio" name="sex" checked><span class="checkmark"></span>
-          </label>
-    </div>
-    <h2>Дата рождения</h2>
-    <input class="input reg-account__input" type="text" placeholder="ДД.ММ.ГГГГ">
-    <h2>Данные для входа в сервис</h2>
-    <input class="input reg-account__input" type="email" placeholder="Email">
-    <input class="input reg-account__input" type="password" placeholder="Пароль">
-        <label class="toggle-button__label">Получать спецпредложения
-          <input class="toggle-button__checkbox" type="checkbox" name="onoffswitch">
-          <div class="toggle-button"></div>
-        </label>
-    <button class="button button-arrow reg-account__button-arrow" type="button">Перейти к оплате</button>
-    <div class="reg-account__enter">
-      <text>Уже есть аккаунт на Toxin</text>
-      <button class="button button-border reg-account__button-enter">Войти</button>
-    </div>
-  </div>
+  <!--include ../components/reg-account/reg-account.pug-->
+<div class="find-number">
+  <h1>Найдем номера под ваши пожелания</h1>
+<label class="find-dropdown__label">Прибытие
+  <input class="find-dropdown__input-come datepicker-here" type="text" autoclose="true" data-position="bottom left" placeholder="ДД.ММ.ГГ">
+</label>
+<label class="find-dropdown__label">Прибытие
+  <input class="find-dropdown__input-come datepicker-here" type="text" data-position="bottom left" placeholder="ДД.ММ.ГГ">
+</label>
+</div>
 <script type="text/javascript" src="./js/index.js"></script></body>
