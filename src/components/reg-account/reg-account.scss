@@ -1,24 +1,26 @@
 @import '../buttons/button.scss';
-@import '../radio-button/radio-button.scss';
-@import '../toggle-button/toggle-button.scss';
+@import '../buttons/radio-button/radio-button.scss';
+@import '../buttons/toggle-button/toggle-button.scss';
 @import '../input/input.scss';
 .reg-account{
     padding:  40px 30px;
     font-size: 10px;    
-    width: 320px;
-    height: 646px;
+    width: 318px;   
+    height: 564px; 
     border: 1px solid rgba(0, 0, 0, 0.12);
     border-radius:  4px;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
 }
 .reg-account h1{    
+    font-family: 'Montserrat';   
+    font-weight: bold;
     box-sizing: border-box;    
     height: 30px;    
     margin: 0;    
     line-height: 30px;
-    font-size: 24px;    
-    font-family: 'Montserratbold';        
-    margin-bottom: 20px;    
+    font-size: 24px;              
+    margin-bottom: 20px;  
+    letter-spacing: -0.6px;  
 }
 
 .reg-account h2{    
@@ -40,4 +42,26 @@
 
 .reg-account__button-arrow{
     margin-top: 21px;
+}
+
+.reg-account__enter {
+    height: 44px;
+    vertical-align: middle;
+
+}
+.reg-account__enter text{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    display: inline-block;
+    margin-top:  42px;
+    padding-left: 1px;    
+}
+.reg-account__enter button{
+    display: block;
+    float: right;
+    margin-top:30px;
+    margin-bottom:30px;
 }
