@@ -1,0 +1,28 @@
+@import '../colors.scss';
+
+.color{
+    display: inline-block;
+    position: absolute;
+    top:0;
+    width: 70px;
+    height:70px;
+    background: $dark-shade100;
+    border-radius: 6px;
+}
+.color-type{
+    display: inline-block;
+    position: absolute;        
+    top: 0;
+    left: 118px;     
+    height: 70px;
+    margin:0;
+    padding-top:10px;    
+}
+
+.color-name{
+    font-weight: bold;  
+
+}
+.color-value{
+    font-weight: normal;
+}

@@ -1,6 +1,8 @@
+@import '../../colors.scss';
 
 /* Customize the label (the container) */
 .container { 
+    
     font-family: Montserrat, sans-serif;
     display: inline-block;   
     box-sizing: border-box;
@@ -67,5 +69,5 @@
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    background: $purple-gradient;
   }

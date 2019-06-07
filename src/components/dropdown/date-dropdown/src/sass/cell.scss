@@ -10,14 +10,14 @@
 }
 
 .datepicker--cell {  
-  border-radius: $datepickerBorderRadius;
+  border-radius: $datepickerBorderRadiusDay;
   box-sizing: border-box;
   cursor: pointer;
   display: flex;
   position: relative;
   align-items: center;
   justify-content: center;
-  height: $datepickerDayCellSize;
+  height: $datepickerDayCellSize;  
   z-index: 1;
 
   &.-focus- {
@@ -25,7 +25,7 @@
   }
 
   &.-current- {
-    color: map_get($datepickerTextColor, currentDate);
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
 
     &.-focus- {
       color: map_get($datepickerTextColor, common);
@@ -37,9 +37,11 @@
   }
 
   &.-in-range- {
-    background: map_get($datepickerBG, inRange);
+    //background: map_get($datepickerBG, inRange);
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    opacity: 0.25;
     color: map_get($datepickerTextColor, common);
-    border-radius: 0;
+    border-radius: 0;///change
 
     &.-focus- {
       background-color: rgba(map_get($datepickerBG, inRange), .2);
@@ -67,13 +69,37 @@
 
   &.-range-from- {
     border: 1px solid rgba(map_get($datepickerBG, selected), .5);
-    background-color: map_get($datepickerBG, inRange);
-    border-radius: $datepickerBorderRadius 0 0 $datepickerBorderRadius;
+    //background-color: map_get($datepickerBG, inRange);
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);    
+//    border-radius: $datepickerBorderRadius 0 0 $datepickerBorderRadius;    
+    border-radius: 50%;    
+   
   }
+  &.-range-from-::after{
+    content:"";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);    
+    opacity: 0.25;
+    border-radius:  50% 0 0 50%;
+    z-index: -1;
+  } 
   &.-range-to- {
     border: 1px solid rgba(map_get($datepickerBG, selected), .5);
-    background-color: map_get($datepickerBG, inRange);
-    border-radius:  0 $datepickerBorderRadius $datepickerBorderRadius 0;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);    
+    //border-radius:  0 $datepickerBorderRadius $datepickerBorderRadius 0;
+    border-radius: 50%;
+  }
+  &.-range-to-::after{
+    content:"";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);    
+    opacity: 0.25;
+    border-radius: 0 50% 50% 0;
+    z-index: -1;
   }
 
   &.-range-from-.-range-to- {
@@ -84,15 +110,18 @@
   &.-selected- {
     color: #fff;
     border: none;
-    background: map_get($datepickerBG, selected);
+    //background: map_get($datepickerBG, selected);
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);    
 
     &.-current- {
       color: #fff;
-      background: map_get($datepickerBG, selected);
+      //background: map_get($datepickerBG, selected);
+      background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
     }
 
     &.-focus- {
-      background: map_get($datepickerBG, selectedHover);
+      //background: map_get($datepickerBG, selectedHover);
+      background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);    
     }
   }
 
@@ -107,7 +136,8 @@
 .datepicker--days-names {
   display: flex;
   flex-wrap: wrap;
-  margin: 8px 0 3px;
+  margin-top: 5px;
+  height: 40px;
 }
 
 .datepicker--day-name {
@@ -117,7 +147,7 @@
   justify-content: center;
   flex: 1;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: none;
   font-size: .8em;
 }
 
@@ -126,6 +156,8 @@
 
 .datepicker--cell-day {
   width: (100/7)#{'%'};
+//  width: $datepickerCellDayWidth;
+//  height: $datepickerCellDayHeight;
 
   &.-other-month- {
     @extend %otherMonth;

@@ -1,15 +1,19 @@
 $datepickerDayCellSize: 40px !default;
 $datepickerWidth: 320px !default;
-$detepickerHeight: 369px !default;
 $datepickerMinBodyHeight: 170px !default;
 $datepickerBorderRadius: 4px !default;
 $datepickerPadding: 4px !default;
 $datepickerZIndex: 100 !default;
 
-$datepickerFontFamily: Tahoma !default;
+$datepickerFontFamily: Montserrat !default;
 $datepickerFontSize: 14px !default;
 
 $datepickerYearsPerRow: 4 !default;
+//my variables
+$detepickerHeight: 369px !default;
+$datepickerBorderRadiusDay: 50% !default;
+$datepickerCellDayWidth: 40px;
+$datepickerCellDayHeight: 40px;
 
 $datepickerTextColor: (
   button: #5cc4ef,

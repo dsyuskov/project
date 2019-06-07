@@ -8,11 +8,11 @@
             '<div class="datepicker">' +
             //'<i class="datepicker--pointer"></i>' +
             '<nav class="datepicker--nav"></nav>' +
-            '<div class="datepicker--content"></div>' +
+            '<div class="datepicker--content"></div>' +            
             '</div>',
         defaults = {
             classes: '',
-            inline: true,
+            inline: false,
             language: 'ru',
             startDate: new Date(),
             firstDay: '',
@@ -37,24 +37,28 @@
             selectOtherYears: true,
             moveToOtherYearsOnSelect: true,
 
-            minDate: '',
+            minDate: new Date(),
             maxDate: '',
             disableNavWhenOutOfRange: true,
 
             multipleDates: false, // Boolean or Number
             multipleDatesSeparator: ',',
-            range: false,
+            range: true,
 
+            applyButton: true,
             todayButton: false,
-            clearButton: false,
+            clearButton: true,
 
             showEvent: 'focus',
-            autoClose: false,
+            autoClose: true,
 
             // navigation
             monthsField: 'monthsShort',
-            prevHtml: '<svg><path d="M 17,12 l -5,5 l 5,5"></path></svg>',
-            nextHtml: '<svg><path d="M 14,12 l 5,5 l -5,5"></path></svg>',
+            //prevHtml: '<svg><path d="M 17,12 l -5,5 l 5,5"></path></svg>',
+            //nextHtml: '<svg><path d="M 14,12 l 5,5 l -5,5"></path></svg>',            
+            prevHtml: '<svg><path d="M16.1755 8.01562V9.98438H3.98801L9.56613 15.6094L8.15988 17.0156L0.144258 9L8.15988 0.984375L9.56613 2.39062L3.98801 8.01562H16.1755Z" fill="#BC9CFF"/></svg>',
+            nextHtml: '<svg><path d="M8.36301 0.984375L16.3786 9L8.36301 17.0156L6.95676 15.6094L12.5349 9.98438H0.347383V8.01562H12.5349L6.95676 2.39062L8.36301 0.984375Z" fill="#BC9CFF"/></svg>',
+            
             navTitles: {
                 days: 'MM <i>yyyy</i>',
                 months: 'yyyy',
@@ -597,6 +601,9 @@
             if (this.opts.onSelect) {
                 this._triggerOnChange()
             }
+        },
+        apply: function () {
+            
         },
 
         /**
@@ -1480,6 +1487,7 @@
             monthsShort: ['Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн', 'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек'],
             today: 'Сегодня',
             clear: 'Очистить',
+            apply: 'Применить',
             dateFormat: 'dd.mm.yyyy',
             timeFormat: 'hh:ii',
             firstDay: 1
@@ -1488,6 +1496,8 @@
 
     $(function () {
         $(autoInitSelector).datepicker();
+        $('#datepicker-here-begin').datepicker();
+        $('#datepicker-here-end').datepicker();
     })
 
 })();
@@ -1810,7 +1820,7 @@
         '<div class="datepicker--nav-title">#{title}</div>' +
         '<div class="datepicker--nav-action" data-action="next">#{nextHtml}</div>',
         buttonsContainerTemplate = '<div class="datepicker--buttons"></div>',
-        button = '<span class="datepicker--button" data-action="#{action}">#{label}</span>',
+        button = '<span class="datepicker--button button-no-border-#{action}" data-action="#{action}">#{label}</span>',
         datepicker = $.fn.datepicker,
         dp = datepicker.Constructor;
 
@@ -1848,6 +1858,9 @@
             }
             if (this.opts.clearButton) {
                 this._addButton('clear')
+            }
+            if (this.opts.applyButton) {
+                this._addButton('apply')
             }
         },
 

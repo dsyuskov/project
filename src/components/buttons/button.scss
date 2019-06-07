@@ -61,3 +61,17 @@
     }
   }
 
+@mixin button-no-border{
+    @include button-reset;
+    @include button-font;    
+    background-color: white;
+    cursor: pointer;
+}
+.button-no-border-apply{
+    @include button-no-border;
+    color: #BC9CFF;
+}
+.button-no-border-clear{
+    @include button-no-border;
+    color: rgba(31, 32, 65, 0.5);
+}

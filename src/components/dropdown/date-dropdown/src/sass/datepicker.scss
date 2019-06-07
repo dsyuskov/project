@@ -26,8 +26,7 @@
   font-size: $datepickerFontSize;
   color: map_get($datepickerTextColor, common);
   width: $datepickerWidth;
-  height: $detepickerHeight;
-  //height: $datepicker;              
+  height: $detepickerHeight;            
   position: absolute;
   left: -100000px;
   opacity: 0;
@@ -73,7 +72,9 @@
 
 .datepicker--content {
   box-sizing: content-box;
-  padding: $datepickerPadding;
+  //padding: $datepickerPadding;
+  padding: 20px;
+  padding-top: 20px;
 
   .-only-timepicker- & {
     display: none;

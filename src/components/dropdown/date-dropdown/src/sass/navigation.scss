@@ -9,7 +9,10 @@
   justify-content: space-between;
   //border-bottom: 1px solid map_get($datepickerBorderColor, nav);
   min-height: $datepickerNavigationHeight;
-  padding: $datepickerPadding;
+  
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 15px;
 
   .-only-timepicker- & {
     display: none;
@@ -24,8 +27,7 @@
   justify-content: center;
 }
 
-.datepicker--nav-action {
-  width: $datepickerDayCellSize;
+.datepicker--nav-action {  
   border-radius: $datepickerBorderRadius;
   user-select: none;
 
@@ -37,31 +39,35 @@
     visibility: hidden;
   }
 
-  svg {
-    width: 52px;
-    height: 32px;
-  }
+  svg {    
+    width: 19px;   
+    height: 17px; 
+    }
 
   path {     
     //background: url('../images/date_arrow_forward.svg');
-    /*fill: none;
-    stroke: map_get($datepickerTextColor, navArrows);
-    stroke-width: 2px;    */
+    //fill: none;
+    //stroke: map_get($datepickerTextColor, navArrows);
+    //stroke-width: 2px;    
   }
 }
+
 
 .datepicker--nav-title {
   border-radius: $datepickerBorderRadius;
   padding: 0 8px;
+  text-transform: none;
+  font-size: 18px;
+  font-weight: bold;
 
   i {
     font-style: normal;
-    color: map_get($datepickerTextColor, navArrows);
+//    color: map_get($datepickerTextColor, navArrows);
     margin-left: 5px;
   }
 
   &:hover {
-    background: map_get($datepickerBG, hover);
+    //background: map_get($datepickerBG, hover);
   }
 
   &.-disabled- {
@@ -72,26 +78,25 @@
 
 //  Buttons
 // -------------------------------------------------
-
+/*
 .datepicker--buttons {
   display: flex;
-  padding: $datepickerPadding;
-  border-top: 1px solid map_get($datepickerBorderColor, nav);
+  padding: 0 20px;
+//  border-top: 1px solid map_get($datepickerBorderColor, nav);
 }
-
+*/
+.datepicker--buttons {
+display: flex;
+    align-items: center;
+    justify-content: space-between;      
+    padding: 0 20px;  
+}
+/*
 .datepicker--button {
-  color: map_get($datepickerTextColor, currentDate);
   cursor: pointer;
-  border-radius: $datepickerBorderRadius;
+  
   flex: 1;
   display: inline-flex;
-  justify-content: center;
-  align-items: center;
   height: 32px;
 
-  &:hover {
-    color: map_get($datepickerTextColor, common);
-    background: map_get($datepickerBG, hover);
-  }
-
-}
+}*/
