@@ -1,0 +1,9 @@
+@import '../common.scss';
+@import '../dropdown/date-dropdown/date-dropdown.scss';
+.find-number{
+    @include box;
+    font-size: 10px;    
+    width: 318px;   
+    height: 564px; 
+    
+}

@@ -1,3 +1,7 @@
-h1{
-    color: green;
-}
+@import '../fonts/Montserrat/Montserrat.css';
+@import '../components/reg-account/reg-account.scss';
+@import '../components/find-number/find-number.scss';
+//@import '../components/dropdown/date-dropdown/sass/datepicker.scss';
+//@import '../components/dropdown/date-dropdown/datepicker.scss';
+//@import '../components/dropdown/date-dropdown/temp.scss';
+@import '../components/colors-and-types/colors-and-types.scss';

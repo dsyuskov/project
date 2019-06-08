@@ -1,0 +1,77 @@
+@mixin button-reset{
+    padding: 0;
+    border: none;    
+}
+@mixin button-font {
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+}
+
+.button{
+    @include button-reset;
+    @include button-font;
+    border-radius: 22px;
+    height: 44px;
+    width: 99px;     
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);   
+}
+
+.button:hover{
+    opacity: 0.5;
+}
+.button-arrow{        
+    width: 320px;        
+    vertical-align: middle;   
+    background:  url('../images/arrow_forward.svg') 96% 50% no-repeat,
+                 linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+
+.button-border {  
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    position: relative;    
+    color: #BC9CFF;
+    background:white;
+    $border: 2px;
+    background-clip: padding-box; /* !importanté */
+    border: solid $border transparent; /* !importanté */
+    
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0; right: 0; bottom: 0; left: 0;
+      z-index: -1;      
+      margin: -$border; /* !importanté */
+      border-radius: inherit; /* !importanté */
+      background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    }
+  }
+
+  .button-border:hover {   
+      opacity: 1;
+    &:before {  
+      opacity: 0.5; 
+    }
+  }
+
+@mixin button-no-border{
+    @include button-reset;
+    @include button-font;    
+    background-color: white;
+    cursor: pointer;
+}
+.button-no-border-apply{
+    @include button-no-border;
+    color: #BC9CFF;
+}
+.button-no-border-clear{
+    @include button-no-border;
+    color: rgba(31, 32, 65, 0.5);
+}

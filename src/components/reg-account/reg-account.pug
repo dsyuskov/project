@@ -1,0 +1,19 @@
+div.reg-account    
+    h1 Регистрация аккаунта
+    input.input.reg-account__input(type="text" placeholder="Имя")
+    input.input.reg-account__input(type="text" placeholder="Фамилия")
+    include ../buttons/radio-button/radio-button.pug   
+    .reg-account__sex
+        +radio-button('sex','Мужчина')    
+        +radio-button('sex','Женщина')
+    h2 Дата рождения
+    input.input.reg-account__input(type="text" placeholder="ДД.ММ.ГГГГ")
+    h2 Данные для входа в сервис
+    input.input.reg-account__input(type="email" placeholder="Email")
+    input.input.reg-account__input(type="password" placeholder="Пароль")
+    include ../buttons/toggle-button/toggle-button.pug
+    +toggle-button('Получать спецпредложения')      
+    button.button.button-arrow.reg-account__button-arrow(type='button') Перейти к оплате
+    .reg-account__enter
+        text Уже есть аккаунт на Toxin
+        button.button.button-border.reg-account__button-enter Войти

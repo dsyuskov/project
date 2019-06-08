@@ -1,4 +1,5 @@
 const path = require('path');
+var webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const PATHS = {
@@ -20,6 +21,12 @@ module.exports = {
             chunks: ['index'],
             template: PATHS.source+'/pages/index.pug',
         }),
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            'window.jQuery': 'jquery'
+          })
+
     ],
     module:{
         rules: [
