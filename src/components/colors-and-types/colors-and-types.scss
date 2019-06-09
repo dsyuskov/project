@@ -1,28 +1,43 @@
 @import '../colors.scss';
-
-.color{
-    display: inline-block;
+@import './colors-example.scss';
+@import './fonts-example.scss';
+.colorAndTypes-logo{
     position: absolute;
-    top:0;
-    width: 70px;
-    height:70px;
+    top: 30px;
+    left: 30px;        
+}
+.colorAndTypes-colors{    
+    float: left;    
+    margin-left: 142px; 
+    margin-top: 117px;    
+    border: 1px dashed black;
+}
+.colorAndTypes-fonts{
+    float: left;
+    margin-top: 117px;
+    margin-right: 100px;
+    border: 1px dashed black;
+}
+
+.dark-shade100{
     background: $dark-shade100;
-    border-radius: 6px;
 }
-.color-type{
-    display: inline-block;
-    position: absolute;        
-    top: 0;
-    left: 118px;     
-    height: 70px;
-    margin:0;
-    padding-top:10px;    
+.dark-shade75{
+    background: $dark-shade75;
 }
 
-.color-name{
-    font-weight: bold;  
-
+.dark-shade50{
+    background: $dark-shade50;
 }
-.color-value{
-    font-weight: normal;
+.dark-shade25{
+    background: $dark-shade25;
+}
+.dark-shade5{
+    background: $dark-shade5;
+}
+.purple{
+    background: $purple;
+}
+.green{
+    background: $green
 }
