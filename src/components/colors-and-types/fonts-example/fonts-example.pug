@@ -1,6 +1,6 @@
 mixin font-box(tag, text)
-    div.colorAndTypes__fontWrapper
+    div.colorAndTypes__fontWrapper(class='colorAndTypes__fontWrapper'+tag)
         div.colorAndTypes__fontSquare
             |<#{tag}> #{tag}
         div.colorAndTypes__fontExample
-            |<#{tag}> #{text}
+            |<#{tag}> !{text}

@@ -1,4 +1,4 @@
-.color-square{            
+.colorAndTypes__colorSquare{            
     position: absolute;
     display: inline-block;
     top: 0;
@@ -6,11 +6,8 @@
     height:70px;    
     border-radius: 6px;
 }
-.color-box{
-    margin-top: 20px;
-}
 
-.color-type{    
+.colorAndTypes__colorExample{    
     position: absolute;
     display: inline-block;      
     top:0;
@@ -20,17 +17,13 @@
     padding-top:10px;
 }
 
-.wrapper{
+.colorAndTypes__colorWrapper{
     position: relative;
     width: 300px;
     height: 70px;    
 }
 
-.color-name{
-    font-weight: bold;  
-}
-
 .color-value{
     font-weight: normal;
-    margin-top: 7px;
+    margin-top: 5px;
 }
