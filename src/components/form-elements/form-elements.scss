@@ -1,0 +1,17 @@
+@import '../colors.scss';
+@import '../common.scss';
+
+.formElements{
+    width: 1440px;
+    height: 900px;
+}
+
+.formElements--logo{
+    position: absolute;
+    top: 30px;
+    left: 30px;    
+}
+.formElements__column1{
+    margin-top: 143px;    
+    margin-left: 141px;
+}

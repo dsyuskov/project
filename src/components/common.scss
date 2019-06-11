@@ -35,6 +35,11 @@ body{
     line-height: 24px;
     color:$dark-shade75;
 }
+.logo{
+    width: 48px;
+    height: 48px;
+    background: url("../images/logo.svg");    
+}
 
 @mixin box{
     padding:  40px 30px;

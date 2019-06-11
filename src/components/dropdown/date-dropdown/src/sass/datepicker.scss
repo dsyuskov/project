@@ -73,8 +73,7 @@
 .datepicker--content {
   box-sizing: content-box;
   //padding: $datepickerPadding;
-  padding: 20px;
-  padding-top: 20px;
+  padding: 20px;  
 
   .-only-timepicker- & {
     display: none;
