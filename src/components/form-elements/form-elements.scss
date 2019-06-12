@@ -1,5 +1,6 @@
 @import '../colors.scss';
 @import '../common.scss';
+@import '../dropdown/ghost-dropdown/ghost-dropdown.scss';
 
 .formElements{
     width: 1440px;
@@ -12,6 +13,17 @@
     left: 30px;    
 }
 .formElements__column1{
-    margin-top: 143px;    
-    margin-left: 141px;
+    width: 320px;
+    margin-top: 140px;    
+    margin-left: 133px;    
+}
+.formElements__inputDefault{
+    margin-bottom: 17px;
+}
+.formElements__inputHover{
+    margin-bottom: 17px;
+}
+.formElements__inputHover input{
+    border: 1px solid $dark-shade50;
+    color: $dark-shade75;
 }

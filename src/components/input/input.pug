@@ -1,11 +1,11 @@
 mixin input(inputCaption, inputType)   
-    div.input
+    div.input(class!=attributes.class)
         if inputCaption && inputType
             h3.input__caption= inputCaption
             h3.input__type= inputType
-            input(class!=attributes.class placeholder!=attributes.placeholder type!=attributes.type name!=attributes.name)
+            input(placeholder!=attributes.placeholder type!=attributes.type name!=attributes.name)
         else if inputCaption
             h3.input__caption= inputCaption   
-            input(class!=attributes.class placeholder!=attributes.placeholder type!=attributes.type name!=attributes.name)
+            input(placeholder!=attributes.placeholder type!=attributes.type name!=attributes.name)
         else
-            input(class!=attributes.class placeholder!=attributes.placeholder type!=attributes.type name!=attributes.name)
+            input(placeholder!=attributes.placeholder type!=attributes.type name!=attributes.name)

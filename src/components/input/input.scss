@@ -21,15 +21,16 @@ input:focus{
     color: $dark-shade75;
 }
 .input{
-    width: 320px;
+    width: 320px;    
 }
 .input__caption{
     float: left;
-    margin:3px 0 5px 0;
+    margin: 3px 0 5px 0;
 }
 .input__type{    
     float:right;
     font-weight: normal;      
-    margin:0 0 8px 0;
+    margin: 3px 0 5px 0;
     color: $dark-shade50;
+    letter-spacing: -0.2px;
 }

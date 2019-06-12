@@ -2,8 +2,8 @@ include ../input/input.pug
 div.formElements
     div.logo.formElements--logo           
     div.formElements__column1
-        +input("Text field","Default")(placeholder="Email" type="Email" name="Email")
-        +input("Text field","Hover / Focus")
-        
+        +input("Text field","Default")(class="formElements__inputDefault" placeholder="Email" type="Email" name="Email")
+        +input("Text field","Hover / Focus")(class="formElements__inputHover" placeholder="This is pretty awesome")        
+        include ../dropdown/ghost-dropdown/ghost-dropdown.pug
 
 
