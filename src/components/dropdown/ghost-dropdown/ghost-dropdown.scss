@@ -1,8 +1,52 @@
-.dropdown{
+.ghostDropdown{
     background: url("../images/expand_more.svg") no-repeat 290px 50%;
+    cursor: pointer;    
 }
-#panel{
+#ghostDropdownList{
+    position: relative;    
+    top: -1px;
+    box-sizing: border-box;
     width: 320px;
-    height: 200px;
-    border: 1px solid black;
+    height: 159px;
+    border: 1px solid $dark-shade50;
+    padding-left: 14px;
+    padding-right: 6px;    
+    padding-top: 5px;
+    border-radius: 0 0 4px 4px;    
+    //display: none;    
+}
+.active{
+    border-radius: 4px 4px 0 0;    
+}
+
+#ghostDropdownList .ghostDropdownLine{
+    margin-bottom: 7px;
+}
+
+//--------ghostDropdownLine
+.ghostDropdownLine{
+    position: relative;    
+    height: 30px;        
+}
+.ghostDropdownLine__caption{
+    display: inline-block;    
+    margin-top: 7px;
+}
+.ghostDropdownLine__counter{
+    float: right;
+}
+
+.ghostDropdownLine__value{      
+    display: inline;
+    margin-right:9px;
+    margin-left: 9px;
+}
+.ghostDropdownLine__button{    
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    background: white;
+    border: 1px solid $dark-shade50;        
+    border-radius: 50%;
+    cursor: pointer;
 }

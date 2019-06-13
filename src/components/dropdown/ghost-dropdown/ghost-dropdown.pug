@@ -1,3 +1,15 @@
-<input type="text" class="dropdown">
-<div id="panel">
-    h3 hello world
+mixin ghostDropdownLine(caption)
+    div.ghostDropdownLine
+        h3.ghostDropdownLine__caption= caption
+        div.ghostDropdownLine__counter
+            button.ghostDropdownLine__button(type="button") -            
+            h3.ghostDropdownLine__value 2
+            button.ghostDropdownLine__button(type="button") +
+
+input(type="text" class="ghostDropdown" readonly)
+div(id="ghostDropdownList")    
+    +ghostDropdownLine("Взрослые")    
+    +ghostDropdownLine("Дети")    
+    +ghostDropdownLine("Младенцы")    
+    button.button-no-border-clear Очистить
+    button.button-no-border-apply Принять
