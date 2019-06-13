@@ -70,8 +70,10 @@
 .button-no-border-apply{
     @include button-no-border;
     color: #BC9CFF;
+    float: right;
 }
 .button-no-border-clear{
     @include button-no-border;
     color: rgba(31, 32, 65, 0.5);
+    float: left;
 }

@@ -12,9 +12,18 @@
     left: 30px;    
 }
 .formElements__column1{
+    float: left;
     width: 320px;
-    margin-top: 140px;    
+    margin-top: 133px;    
     margin-left: 133px;    
+    //border: 1px dashed black;
+}
+.formElements__column2{
+    float: left;    
+    width:320px;
+    margin-top: 136px;    
+    margin-left: 126px;
+//    border: 1px dashed black;
 }
 .formElements__inputDefault{
     margin-bottom: 17px;
@@ -25,4 +34,13 @@
 .formElements__inputHover input{
     border: 1px solid $dark-shade50;
     color: $dark-shade75;
+}
+.formElements__ghostDropdown{
+    margin-bottom: 20px;
+}
+.formElements__inputMasked{
+    margin-bottom: 0;
+}
+.formElements__checkboxButton h3{
+    margin: 0;
 }

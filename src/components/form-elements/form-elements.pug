@@ -1,9 +1,17 @@
 include ../input/input.pug
+include ../dropdown/ghost-dropdown/ghost-dropdown.pug
 div.formElements
     div.logo.formElements--logo           
     div.formElements__column1
         +input("Text field","Default")(class="formElements__inputDefault" placeholder="Email" type="Email" name="Email")
-        +input("Text field","Hover / Focus")(class="formElements__inputHover" placeholder="This is pretty awesome")        
-        include ../dropdown/ghost-dropdown/ghost-dropdown.pug
+        +input("Text field","Hover / Focus")(class="formElements__inputHover" placeholder="This is pretty awesome")                
+        +ghostDropdown("Dropdown","Default")(class="formElements__ghostDropdown")   
+        +input("Masked text field","Default")(class="formElements__inputMasked")
+    div.formElements__column2
+        div.formElements__checkboxButton
+            h3 checkbox buttons
+            label
+                input(type="checkbox") 
+                |можно курить
 
 

@@ -6,10 +6,15 @@ mixin ghostDropdownLine(caption)
             h3.ghostDropdownLine__value 2
             button.ghostDropdownLine__button(type="button") +
 
-input(type="text" class="ghostDropdown" readonly)
-div(id="ghostDropdownList")    
-    +ghostDropdownLine("Взрослые")    
-    +ghostDropdownLine("Дети")    
-    +ghostDropdownLine("Младенцы")    
-    button.button-no-border-clear Очистить
-    button.button-no-border-apply Принять
+mixin ghostDropdown(dropdownCaption,dropdownType)       
+    div.dropdown(class!=attributes.class)
+        h3.dropdown__caption= dropdownCaption
+        h3.dropdown__type= dropdownType
+        input(type="text" class="ghostDropdown" readonly)
+        div(id="ghostDropdownList")    
+            +ghostDropdownLine("Взрослые")    
+            +ghostDropdownLine("Дети")    
+            +ghostDropdownLine("Младенцы")
+            div.ghostDropdownLineButton
+                button.button-no-border-clear Очистить
+                button.button-no-border-apply Применить

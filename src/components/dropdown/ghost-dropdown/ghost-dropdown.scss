@@ -3,8 +3,7 @@
     cursor: pointer;    
 }
 #ghostDropdownList{
-    position: relative;    
-    top: -1px;
+    position: absolute;        
     box-sizing: border-box;
     width: 320px;
     height: 159px;
@@ -13,7 +12,8 @@
     padding-right: 6px;    
     padding-top: 5px;
     border-radius: 0 0 4px 4px;    
-    //display: none;    
+    display: none;   
+    background: white; 
 }
 .active{
     border-radius: 4px 4px 0 0;    
@@ -22,7 +22,24 @@
 #ghostDropdownList .ghostDropdownLine{
     margin-bottom: 7px;
 }
+.ghostDropdownLineButton{
+    padding-top: 15px;
+}
 
+.dropdown{
+    width: 320px;    
+}
+.dropdown__caption{
+    float: left;
+    margin: 3px 0 5px 0;
+}
+.dropdown__type{    
+    float:right;
+    font-weight: normal;      
+    margin: 3px 0 5px 0;
+    color: $dark-shade50;
+    letter-spacing: -0.2px;
+}
 //--------ghostDropdownLine
 .ghostDropdownLine{
     position: relative;    
