@@ -1,7 +1,7 @@
 @import '../dropdown/ghost-dropdown/ghost-dropdown.scss';
 @import '../input/input.scss';
 @import '../buttons/checkbox-button/checkbox-button.scss';
-//@import '../buttons/radio-button/radio-button.scss';
+@import '../buttons/radio-button/radio-button.scss';
 
 .formElements{
     width: 1440px;
@@ -53,5 +53,9 @@
 .formElements__radio-buttons{
     margin-top: 38px;
 }
-
-
+.formElements__radio-buttons h3{
+    margin-bottom: 12px;
+}
+.radio-button--woman{
+    margin-left: 15px;
+}

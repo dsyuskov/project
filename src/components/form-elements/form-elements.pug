@@ -1,6 +1,7 @@
 include ../input/input.pug
 include ../dropdown/ghost-dropdown/ghost-dropdown.pug
 include ../buttons/checkbox-button/checkbox-button.pug
+include ../buttons/radio-button/radio-button.pug   
 div.formElements
     div.logo.formElements__logo           
     div.formElements__column1
@@ -15,4 +16,6 @@ div.formElements
             +checkbox-button("pets","Можно с питомцами",true)(class="formElements__checkbox-button")
             +checkbox-button("ghost","Можно пригласить гостей<br>(до 10 человек)",true)(class="formElements__checkbox-button")                
         div.formElements__radio-buttons
-            h3 Radio buttons            
+            h3 Radio buttons     
+            +radio-button("sex","Мужчина",true)(class="radio-button--man")      
+            +radio-button("sex","Женщина")(class="radio-button--woman")      
