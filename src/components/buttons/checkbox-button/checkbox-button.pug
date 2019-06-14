@@ -1,0 +1,7 @@
+mixin checkbox-button(name, label, checked)        
+    label.chebox-button(class!=attributes.class) !{label}
+        if checked
+            input.checkbox-button__input(type='checkbox' name= name checked)
+        else
+            input.checkbox-button__input(type='checkbox' name= name)
+        span.chebox-button__checkmark

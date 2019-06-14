@@ -2,4 +2,4 @@ mixin input(inputCaption, inputType)
     div.input(class!=attributes.class)
         h3.input__caption= inputCaption
         h3.input__type= inputType
-        input(placeholder!=attributes.placeholder type!=attributes.type name!=attributes.name)
+        input.input__field(placeholder!=attributes.placeholder type!=attributes.type name!=attributes.name)

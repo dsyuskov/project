@@ -1,17 +1,18 @@
 include ../input/input.pug
 include ../dropdown/ghost-dropdown/ghost-dropdown.pug
+include ../buttons/checkbox-button/checkbox-button.pug
 div.formElements
-    div.logo.formElements--logo           
+    div.logo.formElements__logo           
     div.formElements__column1
         +input("Text field","Default")(class="formElements__inputDefault" placeholder="Email" type="Email" name="Email")
         +input("Text field","Hover / Focus")(class="formElements__inputHover" placeholder="This is pretty awesome")                
         +ghostDropdown("Dropdown","Default")(class="formElements__ghostDropdown")   
         +input("Masked text field","Default")(class="formElements__inputMasked")
     div.formElements__column2
-        div.formElements__checkboxButton
-            h3 checkbox buttons
-            label
-                input(type="checkbox") 
-                |можно курить
-
-
+        div.formElements__checkbox-buttons
+            h3 Checkbox buttons
+            +checkbox-button("smoke","Можно курить",flase)(class="formElements__checkbox-button")
+            +checkbox-button("pets","Можно с питомцами",true)(class="formElements__checkbox-button")
+            +checkbox-button("ghost","Можно пригласить гостей<br>(до 10 человек)",true)(class="formElements__checkbox-button")                
+        div.formElements__radio-buttons
+            h3 Radio buttons            

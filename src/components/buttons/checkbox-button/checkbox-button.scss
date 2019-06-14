@@ -1,0 +1,76 @@
+.chebox-button{     
+    font-family: Montserrat, sans-serif;
+    display: inline-block;   
+    box-sizing: border-box;
+    height: 24px;
+    position: relative;
+    padding-left: 30px;        
+    margin-bottom: 0px;
+    margin-right: 20px;    
+    line-height: 18px;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;    
+  }
+  //скрытый чекбокс
+.checkbox-button__input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+.chebox-button__checkmark{
+    box-sizing: border-box;
+    position: absolute;
+    vertical-align: middle;
+    margin-top: -1px;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid $dark-shade25;
+    border-radius: 4px;
+}
+.chebox-button__checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+.checkbox-button__input:checked ~ .chebox-button__checkmark {    
+    border: 1px solid $purple;
+  }
+
+    /* Show the indicator (dot/circle) when checked */
+.checkbox-button__input:checked ~ .chebox-button__checkmark:after {
+        display: block;
+        box-sizing: border-box;          
+      }
+      
+      
+.chebox-button__checkmark:after {        
+    content:"";
+    position: absolute;
+    transform: rotate(45deg);   
+        top: 4px;
+        left: 6px;
+        width: 6px;
+        height: 8px;                
+        background: $purple-gradient;
+        z-index: -1;     
+}
+.chebox-button__checkmark:before {        
+    content:"";
+    position: absolute;
+    transform: rotate(45deg);   
+        top: 2px;
+        left: 6px;
+        width: 6px;
+        height: 8px;                
+        background:white;        
+    
+}
