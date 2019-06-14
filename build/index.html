@@ -7,100 +7,103 @@
 <body>    
   <!--include ../components/reg-account/reg-account.pug-->
   <!--include ../components/find-number/find-number.pug-->
-  <div class="colorAndTypes">        
-    <div class="logo colorAndTypes--logo">          </div>
-    <div class="colorAndTypes-colors">
-      <div class="color-box">                   
-          <div class="colorAndTypes__colorWrapper">
-            <div class="colorAndTypes__colorSquare dark-shade100"></div>
-            <div class="colorAndTypes__colorExample">
-              <h2 class="color-name">Dark Shade 100%</h2>
-              <h2 class="color-value">#1F2041</h2>
+  <!--include ../components/colors-and-types/colors-and-types.pug-->
+<div class="rate-button"><img src="images/star_border.svg"></div>
+  <div class="formElements">
+    <div class="logo formElements__logo">          </div>
+    <div class="formElements__column1">
+        <div class="input formElements__inputDefault">
+          <h3 class="input__caption">Text field</h3>
+          <h3 class="input__type">Default</h3>
+          <input class="input__field" placeholder="Email" type="Email" name="Email">
+        </div>
+        <div class="input formElements__inputHover">
+          <h3 class="input__caption">Text field</h3>
+          <h3 class="input__type">Hover / Focus</h3>
+          <input class="input__field" placeholder="This is pretty awesome">
+        </div>
+        <div class="dropdown formElements__ghostDropdown">
+          <h3 class="dropdown__caption">Dropdown</h3>
+          <h3 class="dropdown__type">Default</h3>
+          <input class="ghostDropdown" type="text" readonly>
+          <div id="ghostDropdownList">   
+              <div class="ghostDropdownLine">
+                <h3 class="ghostDropdownLine__caption">Взрослые</h3>
+                <div class="ghostDropdownLine__counter">
+                  <button class="ghostDropdownLine__button" type="button">-            </button>
+                  <h3 class="ghostDropdownLine__value">2</h3>
+                  <button class="ghostDropdownLine__button" type="button">+</button>
+                </div>
+              </div>
+              <div class="ghostDropdownLine">
+                <h3 class="ghostDropdownLine__caption">Дети</h3>
+                <div class="ghostDropdownLine__counter">
+                  <button class="ghostDropdownLine__button" type="button">-            </button>
+                  <h3 class="ghostDropdownLine__value">2</h3>
+                  <button class="ghostDropdownLine__button" type="button">+</button>
+                </div>
+              </div>
+              <div class="ghostDropdownLine">
+                <h3 class="ghostDropdownLine__caption">Младенцы</h3>
+                <div class="ghostDropdownLine__counter">
+                  <button class="ghostDropdownLine__button" type="button">-            </button>
+                  <h3 class="ghostDropdownLine__value">2</h3>
+                  <button class="ghostDropdownLine__button" type="button">+</button>
+                </div>
+              </div>
+            <div class="ghostDropdownLineButton">
+              <button class="button-no-border-clear">Очистить</button>
+              <button class="button-no-border-apply">Применить</button>
             </div>
           </div>
-      </div>
-      <div class="color-box">
-          <div class="colorAndTypes__colorWrapper">
-            <div class="colorAndTypes__colorSquare dark-shade75"></div>
-            <div class="colorAndTypes__colorExample">
-              <h2 class="color-name">Dark Shade 75%</h2>
-              <h2 class="color-value">#1F2041</h2>
-            </div>
-          </div>
-      </div>
-      <div class="color-box">
-          <div class="colorAndTypes__colorWrapper">
-            <div class="colorAndTypes__colorSquare dark-shade50"></div>
-            <div class="colorAndTypes__colorExample">
-              <h2 class="color-name">Dark Shade 50%</h2>
-              <h2 class="color-value">#1F2041</h2>
-            </div>
-          </div>
-      </div>
-      <div class="color-box">
-          <div class="colorAndTypes__colorWrapper">
-            <div class="colorAndTypes__colorSquare dark-shade25"></div>
-            <div class="colorAndTypes__colorExample">
-              <h2 class="color-name">Dark Shade 25%</h2>
-              <h2 class="color-value">#1F2041</h2>
-            </div>
-          </div>
-      </div>
-      <div class="color-box">
-          <div class="colorAndTypes__colorWrapper">
-            <div class="colorAndTypes__colorSquare dark-shade5"></div>
-            <div class="colorAndTypes__colorExample">
-              <h2 class="color-name">Dark Shade 5%</h2>
-              <h2 class="color-value">#1F2041</h2>
-            </div>
-          </div>
-      </div>
-      <div class="color-box">
-          <div class="colorAndTypes__colorWrapper">
-            <div class="colorAndTypes__colorSquare purple"></div>
-            <div class="colorAndTypes__colorExample">
-              <h2 class="color-name">Purple</h2>
-              <h2 class="color-value">#BC9CFF</h2>
-            </div>
-          </div>
-      </div>
-      <div class="color-box">
-          <div class="colorAndTypes__colorWrapper">
-            <div class="colorAndTypes__colorSquare green"></div>
-            <div class="colorAndTypes__colorExample">
-              <h2 class="color-name">Green</h2>
-              <h2 class="color-value">#6FCF97</h2>
-            </div>
-          </div>
-      </div>
+        </div>
+        <div class="input formElements__inputMasked">
+          <h3 class="input__caption">Masked text field</h3>
+          <h3 class="input__type">Default</h3>
+          <input class="input__field">
+        </div>
     </div>
-    <div class="colorAndTypes-fonts">
-      <div class="font-box">
-          <div class="colorAndTypes__fontWrapper colorAndTypes__fontWrapperH1">
-            <div class="colorAndTypes__fontSquare"><H1> H1</div>
-            <div class="colorAndTypes__fontExample"><H1> This one is the sub-section or<br>widget title</div>
-          </div>
+    <div class="formElements__column2">
+      <div class="formElements__checkbox-buttons">
+        <h3>Checkbox buttons</h3>
+          <label class="chebox-button formElements__checkbox-button">Можно курить
+            <input class="checkbox-button__input" type="checkbox" name="smoke"><span class="chebox-button__checkmark"></span>
+          </label>
+          <label class="chebox-button formElements__checkbox-button">Можно с питомцами
+            <input class="checkbox-button__input" type="checkbox" name="pets" checked><span class="chebox-button__checkmark"></span>
+          </label>
+          <label class="chebox-button formElements__checkbox-button">Можно пригласить гостей<br>(до 10 человек)
+            <input class="checkbox-button__input" type="checkbox" name="ghost" checked><span class="chebox-button__checkmark"></span>
+          </label>
       </div>
-      <div class="font-box">
-          <div class="colorAndTypes__fontWrapper colorAndTypes__fontWrapperH2">
-            <div class="colorAndTypes__fontSquare"><H2> H2</div>
-            <div class="colorAndTypes__fontExample"><H2> Next one is the item title inside<br>widgets</div>
-          </div>
+      <div class="formElements__radio-buttons">
+        <h3>Radio buttons     </h3>
+          <label class="radio-button radio-button--man">Мужчина
+            <input class="radio-button__input" type="radio" name="sex" checked><span class="radio-button__checkmark"></span>
+          </label>
+          <label class="radio-button radio-button--woman">Женщина
+            <input class="radio-button__input" type="radio" name="sex"><span class="radio-button__checkmark"></span>
+          </label>
       </div>
-      <div class="font-box">
-          <div class="colorAndTypes__fontWrapper colorAndTypes__fontWrapperH3">
-            <div class="colorAndTypes__fontSquare"><H3> H3</div>
-            <div class="colorAndTypes__fontExample"><H3> This is a label or cta text</div>
-          </div>
+      <div class="formElements__toggle-buttons">
+        <h3>Toggle</h3>
+          <label class="toggle-button formElements__toggle-button">Получать спецпредложения    
+            <input class="toggle-button__input" type="checkbox" name="onoffswitch" checked>
+            <div class="toggle-button__checkmark"></div>
+          </label>
+          <label class="toggle-button formElements__toggle-button">Получать спецпредложения    
+            <input class="toggle-button__input" type="checkbox" name="onoffswitch">
+            <div class="toggle-button__checkmark"></div>
+          </label>
       </div>
-      <div class="font-box">
-          <div class="colorAndTypes__fontWrapper colorAndTypes__fontWrapperBody">
-            <div class="colorAndTypes__fontSquare"><Body> Body</div>
-            <div class="colorAndTypes__fontExample"><Body> This is the body text which is used for most<br>of the design, like paragraphs, lists, etc.</div>
-          </div>
+      <div class="formElements__like-buttons">     
+        <h3>Like button               </h3>
+          <button class="like-button like-button--no-active formElements__like-button">2</button>
+          <button class="like-button like-button--active formElements__like-button">1</button>
+      </div>
+      <div class="formElements__rate-buttons">
+        <h3>Rate button</h3>
       </div>
     </div>
   </div>
-  <!--include ../components/form-elements/form-elements.pug
-  -->
 <script type="text/javascript" src="./js/index.js"></script></body>

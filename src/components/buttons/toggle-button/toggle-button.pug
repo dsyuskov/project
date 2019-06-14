@@ -1,4 +1,7 @@
-mixin toggle-button(title)
-    label.toggle-button__label= title
-        input.toggle-button__checkbox(type='checkbox' name='onoffswitch')
-        div.toggle-button
+mixin toggle-button(label,checked)
+    label.toggle-button(class!=attributes.class) !{label}    
+        if checked
+            input.toggle-button__input(type='checkbox' name='onoffswitch' checked)
+        else
+            input.toggle-button__input(type='checkbox' name='onoffswitch')
+        div.toggle-button__checkmark

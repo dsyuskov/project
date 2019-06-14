@@ -1,4 +1,4 @@
-.toggle-button__label {
+.toggle-button{
     font-family: Montserrat, sans-serif;
     display: inline-block;   
     box-sizing: border-box;
@@ -16,7 +16,7 @@
     user-select: none;                
 }
 
-.toggle-button__checkbox {
+.toggle-button__input {
     position: relative;
     visibility: hidden;
     opacity: 50;
@@ -26,7 +26,7 @@
     width: 0;
 
 }
-.toggle-button {
+.toggle-button__checkmark{
     box-sizing: border-box;       
     position: absolute;
     height: 20px; 
@@ -41,7 +41,7 @@
     border-radius: 10px;    
     background-color: white;        
 }
-.toggle-button:before {
+.toggle-button__checkmark:before {
     content: "";
     display: block; 
     width: 12px; 
@@ -55,13 +55,13 @@
     background: rgba(31, 32, 65, 0.25);
     border-radius: 10px;    
 }
-.toggle-button__checkbox:checked + .toggle-button {
+.toggle-button__input:checked + .toggle-button__checkmark{
     background-color: white;
 }
-.toggle-button__checkbox:checked + .toggle-button, .toggle-button__checkbox:checked + .toggle-button:before {
+.toggle-button__input:checked + .ttoggle-button__checkmark, .toggle-button__input:checked + .toggle-button__checkmark:before {
    border-color: #BC9CFF;   
 }
-.toggle-button__checkbox:checked + .toggle-button:before {    
+.toggle-button__input:checked + .toggle-button__checkmark:before {    
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);            
     right: 3px; 
 }

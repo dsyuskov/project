@@ -2,6 +2,9 @@ include ../input/input.pug
 include ../dropdown/ghost-dropdown/ghost-dropdown.pug
 include ../buttons/checkbox-button/checkbox-button.pug
 include ../buttons/radio-button/radio-button.pug   
+include ../buttons/toggle-button/toggle-button.pug
+include ../buttons/like-button/like-button.pug
+include ../buttons/rate-button/rate-button.pug
 div.formElements
     div.logo.formElements__logo           
     div.formElements__column1
@@ -19,3 +22,15 @@ div.formElements
             h3 Radio buttons     
             +radio-button("sex","Мужчина",true)(class="radio-button--man")      
             +radio-button("sex","Женщина")(class="radio-button--woman")      
+        div.formElements__toggle-buttons
+            h3 Toggle
+            +toggle-button("Получать спецпредложения", true)(class="formElements__toggle-button")
+            +toggle-button("Получать спецпредложения")(class="formElements__toggle-button")
+        div.formElements__like-buttons      
+            h3 Like button               
+            +like-button("2")(class="like-button--no-active formElements__like-button")
+            +like-button("1")(class="like-button--active formElements__like-button")
+        div.formElements__rate-buttons
+            h3 Rate button
+            +rate-button
+            
