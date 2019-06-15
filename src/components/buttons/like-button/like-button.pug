@@ -1,2 +1,4 @@
 mixin like-button(count)
-    button.like-button(class!=attributes.class) !{count}
+    button.like-button(class!=attributes.class)
+        span.like-button__heart
+        span.like-button__counter !{count}

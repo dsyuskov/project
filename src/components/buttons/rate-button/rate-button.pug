@@ -1,7 +1,9 @@
-mixin rate-button
-    div.rate-button
-        img(src=require('../images/star_border.svg'))
-        img(src=require('../images/star_border.svg'))
-        img(src=require('../images/star_border.svg'))
-        img(src=require('../images/star_border.svg'))
-        img(src=require('../images/star_border.svg'))
+mixin rate-button(countStar)
+    -var n = 0;
+    div.rate-button(class!=attributes.class)
+        while n < countStar            
+            img(src=require('../images/star.svg'))   
+            -n++     
+        while 5 > n
+            img(src=require('../images/star_border.svg'))   
+            -n++     

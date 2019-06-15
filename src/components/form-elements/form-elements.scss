@@ -4,6 +4,8 @@
 @import '../buttons/radio-button/radio-button.scss';
 @import '../buttons/toggle-button/toggle-button.scss';
 @import '../buttons/like-button/like-button.scss';
+@import '../buttons/rate-button/rate-button.scss';
+
 
 .formElements{
     width: 1440px;
@@ -74,11 +76,18 @@
     margin-bottom: 31px;
 }
 .formElements__like-buttons h3{
-    margin-bottom: 11px;
+    margin-bottom: 9px;
 }
 .formElements__like-button{
     margin-right: 6px;
 }
 .formElements__like-buttons{
     margin-bottom: 40px;
+}
+.formElements__rate-buttons h3{
+    margin-bottom: 18px;
+}
+.formElements__rate-button{
+    display: inline-block;
+    margin-right:16px;
 }
