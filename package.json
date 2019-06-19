@@ -6,6 +6,9 @@
   "dependencies": {
     "air-datepicker": "^2.2.3",
     "jquery": "^3.4.1",
+    "jquery-ui": "^1.12.1",
+    "jquery-ui-bundle": "^1.12.1-migrate",
+    "nouislider": "^13.1.5",
     "webpack": "^4.32.2",
     "webpack-cli": "^3.3.2"
   },

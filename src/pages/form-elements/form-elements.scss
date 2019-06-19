@@ -1,10 +1,11 @@
-@import '../dropdown/ghost-dropdown/ghost-dropdown.scss';
-@import '../input/input.scss';
-@import '../buttons/checkbox-button/checkbox-button.scss';
-@import '../buttons/radio-button/radio-button.scss';
-@import '../buttons/toggle-button/toggle-button.scss';
-@import '../buttons/like-button/like-button.scss';
-@import '../buttons/rate-button/rate-button.scss';
+@import '../../components/dropdown/ghost-dropdown/ghost-dropdown.scss';
+@import '../../components/input/input.scss';
+@import '../../components/buttons/checkbox-button/checkbox-button.scss';
+@import '../../components/buttons/radio-button/radio-button.scss';
+@import '../../components/buttons/toggle-button/toggle-button.scss';
+@import '../../components/buttons/like-button/like-button.scss';
+@import '../../components/buttons/rate-button/rate-button.scss';
+@import '../../components/range-slider/range-slider.scss';
 
 
 .formElements{
@@ -29,6 +30,13 @@
     width:320px;
     margin-top: 136px;    
     margin-left: 126px;
+    //border: 1px dashed black;
+}
+.formElements__column3{
+    float: left;    
+    width:320px;
+    margin-top: 136px;    
+    margin-left: 72px;
     //border: 1px dashed black;
 }
 .formElements__inputDefault{
@@ -90,4 +98,8 @@
 .formElements__rate-button{
     display: inline-block;
     margin-right:16px;
+}
+
+.formElements__range-slider{
+    margin-bottom: 15px;
 }

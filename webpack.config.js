@@ -25,8 +25,8 @@ module.exports = {
             $: 'jquery',
             jQuery: 'jquery',
             'window.jQuery': 'jquery'
-          })
-
+          }),
+                
     ],
     module:{
         rules: [

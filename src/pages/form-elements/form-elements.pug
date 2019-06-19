@@ -1,10 +1,10 @@
-include ../input/input.pug
-include ../dropdown/ghost-dropdown/ghost-dropdown.pug
-include ../buttons/checkbox-button/checkbox-button.pug
-include ../buttons/radio-button/radio-button.pug   
-include ../buttons/toggle-button/toggle-button.pug
-include ../buttons/like-button/like-button.pug
-include ../buttons/rate-button/rate-button.pug
+include ../../components/input/input.pug
+include ../../components/dropdown/ghost-dropdown/ghost-dropdown.pug
+include ../../components/buttons/checkbox-button/checkbox-button.pug
+include ../../components/buttons/radio-button/radio-button.pug   
+include ../../components/buttons/toggle-button/toggle-button.pug
+include ../../components/buttons/like-button/like-button.pug
+include ../../components/buttons/rate-button/rate-button.pug
 div.formElements
     div.logo.formElements__logo           
     div.formElements__column1
@@ -34,4 +34,9 @@ div.formElements
             h3 Rate button            
             +rate-button(4)(class="formElements__rate-button")
             +rate-button(5)(class="formElements__rate-button")
-            
+    div.formElements__column3
+        div.formElements__range-slider
+            h3 Range slider
+            include ../../components/range-slider/range-slider.pug
+        div.formElements__buttons
+            h3 buttons
