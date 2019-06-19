@@ -2,13 +2,14 @@
 <html></html>
 <head>
   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-  <title>Hello World</title>
+  <title>Hello World    </title>
+  <!--<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">-->
+  <!--<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>    -->
 </head>
 <body>    
-  <!--include ../components/reg-account/reg-account.pug-->
-  <!--include ../components/find-number/find-number.pug-->
-  <!--include ../components/colors-and-types/colors-and-types.pug-->
-<div class="rate-button"><img src="images/star_border.svg"></div>
+  <!--include ../reg-account/reg-account.pug-->
+  <!--include ../find-number/find-number.pug-->
+  <!--include ../colors-and-types/colors-and-types.pug-->
   <div class="formElements">
     <div class="logo formElements__logo">          </div>
     <div class="formElements__column1">
@@ -98,11 +99,42 @@
       </div>
       <div class="formElements__like-buttons">     
         <h3>Like button               </h3>
-          <button class="like-button like-button--no-active formElements__like-button">2</button>
-          <button class="like-button like-button--active formElements__like-button">1</button>
+          <button class="like-button like-button--no-active formElements__like-button"><span class="like-button__heart"></span><span class="like-button__counter">2</span></button>
+          <button class="like-button like-button--active formElements__like-button"><span class="like-button__heart"></span><span class="like-button__counter">12</span></button>
       </div>
       <div class="formElements__rate-buttons">
-        <h3>Rate button</h3>
+        <h3>Rate button            </h3>
+          <div class="rate-button formElements__rate-button"><img src="images/star.svg"><img src="images/star.svg"><img src="images/star.svg"><img src="images/star.svg"><img src="images/star_border.svg">
+          </div>
+          <div class="rate-button formElements__rate-button"><img src="images/star.svg"><img src="images/star.svg"><img src="images/star.svg"><img src="images/star.svg"><img src="images/star.svg">
+          </div>
+      </div>
+    </div>
+    <div class="formElements__column3">
+      <div class="formElements__range-slider">
+        <h3>Range slider</h3><p>
+<label for="amount">Price range:</label>
+<input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+</p>
+<div id="slider-range"></div>
+      </div>
+      <div class="formElements__buttons">
+        <h3>buttons</h3>
+        <div class="formElements__button">
+            <button class="button">Click me</button>
+            <button class="button hover-button">Click me</button>
+        </div>
+        <div class="formElements__border-button">
+            <button class="button border-button">click me</button>
+            <button class="button border-button hover-border-button">click me</button>
+        </div>
+        <div class="formElements__no-border-button">
+            <button class="apply-no-border-button">click me</button>
+            <button class="clear-no-border-button">click me</button>
+        </div>
+        <div class="formElements__arrow-button">
+            <button class="button arrow-button">Перейти к оплате</button>
+        </div>
       </div>
     </div>
   </div>

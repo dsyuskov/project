@@ -9,8 +9,9 @@
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase;
+    letter-spacing: -0.39px;
     color: white;
-    text-align: center;
+    
 }
 
 .button{
@@ -19,26 +20,27 @@
     border-radius: 22px;
     height: 44px;
     width: 99px;     
-    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);   
+    background: $purple-gradient;
+}
+.hover-button{    
+    opacity: 0.5;
 }
 
 .button:hover{
     opacity: 0.5;
 }
-.button-arrow{        
+
+.arrow-button{        
     width: 320px;        
     vertical-align: middle;   
-    background:  url('../images/arrow_forward.svg') 96% 50% no-repeat,
-                 linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    letter-spacing: -0.1px;
+    background:  url('../images/arrow_forward.svg') 96% 50% no-repeat, $purple-gradient;                 
 }
 
-.button-border {  
-    display: flex;  
-    justify-content: center;
-    align-items: center;
+.border-button {  
     position: relative;    
-    color: #BC9CFF;
-    background:white;
+    color: $purple;
+    background: $background;
     $border: 2px;
     background-clip: padding-box; /* !importanté */
     border: solid $border transparent; /* !importanté */
@@ -50,30 +52,35 @@
       z-index: -1;      
       margin: -$border; /* !importanté */
       border-radius: inherit; /* !importanté */
-      background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+      background: $purple-gradient;
     }
   }
 
-  .button-border:hover {   
+  .border-button:hover {   
       opacity: 1;
     &:before {  
       opacity: 0.5; 
     }
   }
+  .hover-border-button {   
+    opacity: 1;
+  &:before {  
+    opacity: 0.5; 
+  }
+ }
 
 @mixin button-no-border{
     @include button-reset;
     @include button-font;    
-    background-color: white;
+    background-color: $background;
     cursor: pointer;
+    letter-spacing: -0.1px;
 }
-.button-no-border-apply{
+.apply-no-border-button{
     @include button-no-border;
-    color: #BC9CFF;
-    float: right;
+    color: $purple;    
 }
-.button-no-border-clear{
-    @include button-no-border;
-    color: rgba(31, 32, 65, 0.5);
-    float: left;
+.clear-no-border-button{
+    @include button-no-border;    
+    color:$dark-shade50;
 }

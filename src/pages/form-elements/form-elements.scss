@@ -6,6 +6,7 @@
 @import '../../components/buttons/like-button/like-button.scss';
 @import '../../components/buttons/rate-button/rate-button.scss';
 @import '../../components/range-slider/range-slider.scss';
+@import '../../components/buttons/button/button.scss';
 
 
 .formElements{
@@ -102,4 +103,28 @@
 
 .formElements__range-slider{
     margin-bottom: 15px;
+}
+.formElements__buttons h3{
+    margin-bottom: 15px;
+}
+.formElements__button{  
+    margin-left: 1px;  
+    margin-bottom: 30px;
+}
+.formElements__button .button{
+    margin-right: 15px;
+}
+.formElements__border-button .button{
+    margin-right: 16px;
+}
+.formElements__border-button{
+    margin-bottom: 26px;    
+}
+
+.formElements__no-border-button{
+    margin-left: 1px;    
+    margin-bottom: 26px;
+}
+.formElements__no-border-button .apply-no-border-button{
+    margin-right: 18px;    
 }
