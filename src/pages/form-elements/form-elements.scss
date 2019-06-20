@@ -7,6 +7,7 @@
 @import '../../components/buttons/rate-button/rate-button.scss';
 @import '../../components/range-slider/range-slider.scss';
 @import '../../components/buttons/button/button.scss';
+@import '../../components/pagination/pagination.scss';
 
 
 .formElements{
@@ -85,13 +86,13 @@
     margin-bottom: 31px;
 }
 .formElements__like-buttons h3{
-    margin-bottom: 9px;
+    margin-bottom: 15px;
 }
 .formElements__like-button{
     margin-right: 6px;
 }
 .formElements__like-buttons{
-    margin-bottom: 40px;
+    margin-bottom: 33px;
 }
 .formElements__rate-buttons h3{
     margin-bottom: 18px;
@@ -127,4 +128,10 @@
 }
 .formElements__no-border-button .apply-no-border-button{
     margin-right: 18px;    
+}
+.formElements__arrow-button{
+    margin-bottom: 40px;
+}
+.formElements__pagination h3{
+    margin-bottom: 16px;
 }
