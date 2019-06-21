@@ -1,28 +1,36 @@
-ul{
+.pagination{
     padding: 0;
     margin:0;
 }
-.pagination{
+.pagination__item{
     display: inline-block;
     width: 40px;
     height:40px;
     border-radius: 50%;        
     line-height: 40px;
     text-align: center;
-    margin-right: -4px;
+    margin-right: -3.8px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;    
 }
-.active{
+.pagination__item_active{
     background: $purple-gradient;
     color: white;
 }
-a{
+.pagination__link{
     text-decoration: none;
     color: $dark-shade50;
 }
-.end{
+.pagination__link_forward{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
     background:  url('../images/arrow_forward.svg') 50% 50% no-repeat, $green-gradient;    
+}
+.pagination__label{    
+    display: block;
+    margin: 8px 0 0 6px;   
 }
