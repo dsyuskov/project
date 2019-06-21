@@ -1,0 +1,22 @@
+.subscription__button{   
+    display: block;
+    float: right;    
+    //width:44px;
+    height:44px;
+    background: url("../images/arrow_forward_purple.svg") no-repeat;
+    background-position: right 12px top 50%; 
+    border: 1px solid red;;
+    margin:0;
+}
+.subscription__input{    
+    display: block;
+    float: left;    
+    //width: 85%;
+    height: 42px;    
+    border: 1px solid green;
+}
+.subscription__container{    
+    //width: 500px;
+    clear: both;    
+    padding: 0;      
+}

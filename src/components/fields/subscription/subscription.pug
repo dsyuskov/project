@@ -1,0 +1,7 @@
+mixin subscription(fieldCaption, fieldType)   
+    div.subscription(class!=attributes.class)
+        h3.field__caption= fieldCaption
+        h3.field__type= fieldType
+        div.field.subscription__container
+            input.field.subscription__input(placeholder!=attributes.placeholder type!=attributes.type name!=attributes.name)
+            button.subscription__button

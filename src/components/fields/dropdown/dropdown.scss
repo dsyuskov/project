@@ -1,0 +1,8 @@
+.dropdown{            
+    background: url("../images/expand_more.svg") no-repeat;
+    background-position: right 15px top 50%; 
+    cursor: pointer;    
+}
+
+@import '../dropdown/date-dropdown/date-dropdown.scss';
+@import '../dropdown/ghost-dropdown/ghost-dropdown.scss';

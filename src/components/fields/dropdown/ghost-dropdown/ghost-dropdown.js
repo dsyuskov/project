@@ -2,7 +2,7 @@
 $(document).ready(function(){
     $(".ghostDropdown").click(function(){
         $("#ghostDropdownList").slideToggle("slow");
-        $(this).toggleClass("active");
+        $(this).toggleClass("ghostDropdown_active");
         $("#ghostDropdownList").toggleClass("open");
     });
 });

@@ -1,5 +1,7 @@
-@import '../../components/dropdown/ghost-dropdown/ghost-dropdown.scss';
-@import '../../components/input/input.scss';
+@import '../../components/fields/field.scss';
+@import '../../components/fields/dropdown/dropdown.scss';
+@import '../../components/fields/input/input.scss';
+@import '../../components/fields/subscription/subscription.scss';
 @import '../../components/buttons/checkbox-button/checkbox-button.scss';
 @import '../../components/buttons/radio-button/radio-button.scss';
 @import '../../components/buttons/toggle-button/toggle-button.scss';
@@ -55,9 +57,25 @@
     margin-bottom: 20px;
 }
 .formElements__inputMasked{
-    margin-bottom: 0;
+    margin-bottom: 37px;
 }
-
+.formElements__date-dropdown .date-dropdown-begin{
+    float: left;
+}
+.formElements__date-dropdown .date-dropdown-end{
+    float: right;
+}
+.formElements__date-dropdown{    
+    height: 70px;
+    margin-bottom: 35px;
+}
+.formElements__filterDateDropdown {
+    width: 266px;
+    margin-bottom: 38px;
+}
+.formElements__subscriptionField{
+    width: 266px;
+}
 .formElements__checkbox-button{
     margin-bottom: 5px;
 }

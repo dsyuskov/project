@@ -1,5 +1,7 @@
-include ../../components/input/input.pug
-include ../../components/dropdown/ghost-dropdown/ghost-dropdown.pug
+include ../../components/fields/input/input.pug
+include ../../components/fields/subscription/subscription.pug
+include ../../components/fields/dropdown/ghost-dropdown/ghost-dropdown.pug
+include ../../components/fields/dropdown/date-dropdown/date-dropdown.pug
 include ../../components/buttons/checkbox-button/checkbox-button.pug
 include ../../components/buttons/radio-button/radio-button.pug   
 include ../../components/buttons/toggle-button/toggle-button.pug
@@ -12,7 +14,12 @@ div.formElements
         +input("Text field","Default")(class="formElements__inputDefault" placeholder="Email" type="Email" name="Email")
         +input("Text field","Hover / Focus")(class="formElements__inputHover" placeholder="This is pretty awesome")                
         +ghostDropdown("Dropdown","Default")(class="formElements__ghostDropdown")   
-        +input("Masked text field","Default")(class="formElements__inputMasked")
+        +input("Masked text field","Default")(class="formElements__inputMasked")   
+        div.formElements__date-dropdown
+            +date-dropdown("Date dropdown")(class="date-dropdown-begin")
+            +date-dropdown("Date dropdown")(class="date-dropdown-end")
+        +filter-date-dropdown("Filter date dropdown")(class="formElements__filterDateDropdown")
+        +subscription("Subscription text field")(class="formElements__subscriptionField")
     div.formElements__column2
         div.formElements__checkbox-buttons
             h3 Checkbox buttons

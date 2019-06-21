@@ -1,0 +1,15 @@
+mixin date-dropdown(fieldCaption)
+    div.date-dropdown(class!=attributes.class)
+        h3.field__caption= fieldCaption
+        h3.field__type= fieldType
+        input.field.dropdown(type!=attributes.type name!=attributes.name)        
+
+mixin filter-date-dropdown(fieldCaption)
+    div.filter-date-dropdown(class!=attributes.class)
+        h3.field__caption= fieldCaption
+        h3.field__type= fieldType
+        input.field.dropdown(type!=attributes.type name!=attributes.name)
+//label.find-dropdown__label Прибытие
+    input.find-dropdown__input-come(type="text" id="datepicker-here-begin" autoclose="true" data-position="bottom left" placeholder="ДД.ММ.ГГ")
+//label.find-dropdown__label Выезд
+    input.find-dropdown__input-come(type="text" id="datepicker-here-end" data-position="bottom left" placeholder="ДД.ММ.ГГ")    
