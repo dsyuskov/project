@@ -41,6 +41,9 @@ body{
     height: 48px;
     background: url("../images/logo.svg");    
 }
+button{
+    -webkit-appearance: none;
+}
 
 @mixin box{
     padding:  40px 30px;

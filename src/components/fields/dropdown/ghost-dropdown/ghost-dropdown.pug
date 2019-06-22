@@ -8,8 +8,11 @@ mixin ghostDropdownLine(caption)
 
 mixin ghostDropdown(dropdownCaption,dropdownType)       
     div.ghostDropdown(class!=attributes.class)
-        h3.field__caption= dropdownCaption
-        h3.field__type= dropdownType
+        if dropdownCaption && dropdownType
+            h3.field__caption= dropdownCaption
+            h3.field__type= dropdownType
+        else if dropdownCaption
+            h3.field__caption= dropdownCaption
         input.field.dropdown(type="text" readonly)
         div(id="ghostDropdownList")            
             +ghostDropdownLine("Взрослые")    

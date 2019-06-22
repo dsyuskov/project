@@ -1,5 +1,8 @@
 mixin input(fieldCaption, fieldType)   
     div.input(class!=attributes.class)
-        h3.field__caption= fieldCaption
-        h3.field__type= fieldType
+        if fieldCaption && fieldType
+            h3.field__caption= fieldCaption
+            h3.field__type= fieldType
+        else if fieldCaption
+            h3.field__caption= fieldCaption
         input.field(placeholder!=attributes.placeholder type!=attributes.type name!=attributes.name)

@@ -17,11 +17,15 @@
     border: 1px solid $dark-shade50;
     color: $dark-shade75;
 }
-.field:focus .field:active{
+.field:focus{
     border: 1px solid $dark-shade50;
     color: $dark-shade75;
 }
 
+.field:active{
+    border: 1px solid $dark-shade50;
+    color: $dark-shade75;
+}
 .field__caption{
     float: left;
     margin:3px 0 5px 0;

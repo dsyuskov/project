@@ -1,13 +1,19 @@
-mixin date-dropdown(fieldCaption)
+mixin date-dropdown(fieldCaption,fieldType)
     div.date-dropdown(class!=attributes.class)
-        h3.field__caption= fieldCaption
-        h3.field__type= fieldType
+        if fieldCaption && fieldType
+            h3.field__caption= fieldCaption
+            h3.field__type= fieldType
+        else if fieldCaption
+            h3.field__caption= fieldCaption
         input.field.dropdown(type!=attributes.type name!=attributes.name)        
 
-mixin filter-date-dropdown(fieldCaption)
+mixin filter-date-dropdown(fieldCaption,fieldType)
     div.filter-date-dropdown(class!=attributes.class)
-        h3.field__caption= fieldCaption
-        h3.field__type= fieldType
+        if fieldCaption,fieldType
+            h3.field__caption= fieldCaption
+            h3.field__type= fieldType
+        else if fieldCaption
+            h3.field__caption= fieldCaption
         input.field.dropdown(type!=attributes.type name!=attributes.name)
 //label.find-dropdown__label Прибытие
     input.find-dropdown__input-come(type="text" id="datepicker-here-begin" autoclose="true" data-position="bottom left" placeholder="ДД.ММ.ГГ")
