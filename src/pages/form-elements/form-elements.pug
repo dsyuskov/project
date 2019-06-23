@@ -8,57 +8,64 @@ include ../../components/buttons/toggle-button/toggle-button.pug
 include ../../components/buttons/like-button/like-button.pug
 include ../../components/buttons/rate-button/rate-button.pug
 include ../../components/buttons/button/button.pug
+include ../../components/buttons/exp-checkbox-list/exp-checkbox-list.pug
 div.formElements
-    div.logo.formElements__logo           
-    div.formElements__column1
-        +input("Text field","Default")(class="formElements__inputDefault" placeholder="Email" type="Email" name="Email")
-        +input("Text field","Hover / Focus")(class="formElements__inputHover" placeholder="This is pretty awesome")                
-        +ghostDropdown("Dropdown","Default")(class="formElements__ghostDropdown")   
-        +input("Masked text field","Default")(class="formElements__inputMasked")   
-        div.formElements__date-dropdown
-            +date-dropdown("Date dropdown")(class="date-dropdown-begin")
-            +date-dropdown("Date dropdown")(class="date-dropdown-end")
-        +filter-date-dropdown("Filter date dropdown")(class="formElements__filterDateDropdown")
-        +subscription("Subscription text field")(class="formElements__subscriptionField" placeholder="Email")
-    div.formElements__column2
-        div.formElements__checkbox-buttons
-            h3 Checkbox buttons
-            +checkbox-button("smoke","Можно курить",flase)(class="formElements__checkbox-button")
-            +checkbox-button("pets","Можно с питомцами",true)(class="formElements__checkbox-button")
-            +checkbox-button("ghost","Можно пригласить гостей<br>(до 10 человек)",true)(class="formElements__checkbox-button")                
-        div.formElements__radio-buttons
-            h3 Radio buttons     
-            +radio-button("sex","Мужчина",true)(class="radio-button--man")      
-            +radio-button("sex","Женщина")(class="radio-button--woman")      
-        div.formElements__toggle-buttons
-            h3 Toggle
-            +toggle-button("Получать спецпредложения", true)(class="formElements__toggle-button")
-            +toggle-button("Получать спецпредложения")(class="formElements__toggle-button")
-        div.formElements__like-buttons      
-            h3 Like button               
-            +like-button("2")(class="like-button--no-active formElements__like-button")
-            +like-button("12")(class="like-button--active formElements__like-button")            
-        div.formElements__rate-buttons
-            h3 Rate button            
-            +rate-button(4)(class="formElements__rate-button")
-            +rate-button(5)(class="formElements__rate-button")
-    div.formElements__column3
-        div.formElements__range-slider
-            h3 Range slider
-            include ../../components/range-slider/range-slider.pug
-        div.formElements__buttons
-            h3 buttons
-            div.formElements__button
-                +button("Click me")
-                +hover-button("Click me")
-            div.formElements__border-button
-                +border-button("click me")
-                +hover-border-button("click me")
-            div.formElements__no-border-button
-                +apply-no-border-button("click me")
-                +clear-no-border-button("click me")
-            div.formElements__arrow-button
-                +arrow-button("Перейти к оплате")
-        div.formElements__pagination
-            h3 Pagination
-            include ../../components/pagination/pagination.pug
+    div.logo.formElements__logo          
+    div.formElements__Block1
+        div.formElements__column1
+            +input("Text field","Default")(class="formElements__inputDefault" placeholder="Email" type="Email" name="Email")
+            +input("Text field","Hover / Focus")(class="formElements__inputHover" placeholder="This is pretty awesome")                
+            +ghostDropdown("Dropdown","Default")(class="formElements__ghostDropdown")   
+            +input("Masked text field","Default")(class="formElements__inputMasked")   
+            div.formElements__date-dropdown
+                +date-dropdown("Date dropdown")(class="date-dropdown-begin")
+                +date-dropdown("Date dropdown")(class="date-dropdown-end")
+            +filter-date-dropdown("Filter date dropdown")(class="formElements__filterDateDropdown")
+            +subscription("Subscription text field")(class="formElements__subscriptionField" placeholder="Email")
+        div.formElements__column2
+            div.formElements__checkbox-buttons
+                h3 Checkbox buttons
+                +checkbox-button("smoke","Можно курить",flase)(class="formElements__checkbox-button")
+                +checkbox-button("pets","Можно с питомцами",true)(class="formElements__checkbox-button")
+                +checkbox-button("ghost","Можно пригласить гостей<br>(до 10 человек)",true)(class="formElements__checkbox-button")                
+            div.formElements__radio-buttons
+                h3 Radio buttons     
+                +radio-button("sex","Мужчина",true)(class="radio-button--man")      
+                +radio-button("sex","Женщина")(class="radio-button--woman")      
+            div.formElements__toggle-buttons
+                h3 Toggle
+                +toggle-button("Получать спецпредложения", true)(class="formElements__toggle-button")
+                +toggle-button("Получать спецпредложения")(class="formElements__toggle-button")
+            div.formElements__like-buttons      
+                h3 Like button               
+                +like-button("2")(class="like-button--no-active formElements__like-button")
+                +like-button("12")(class="like-button--active formElements__like-button")            
+            div.formElements__rate-buttons
+                h3 Rate button            
+                +rate-button(4)(class="formElements__rate-button")
+                +rate-button(5)(class="formElements__rate-button")
+        div.formElements__column3
+            div.formElements__range-slider
+                h3 Range slider
+                include ../../components/range-slider/range-slider.pug
+            div.formElements__buttons
+                h3 buttons
+                div.formElements__button
+                    +button("Click me")
+                    +hover-button("Click me")
+                div.formElements__border-button
+                    +border-button("click me")
+                    +hover-border-button("click me")
+                div.formElements__no-border-button
+                    +apply-no-border-button("click me")
+                    +clear-no-border-button("click me")
+                div.formElements__arrow-button
+                    +arrow-button("Перейти к оплате")
+            div.formElements__pagination
+                h3 Pagination
+                include ../../components/pagination/pagination.pug
+    div.formElements__Block2
+        div.formElements__column4
+            +ghostDropdown("Dropdown","Default")(class="formElements__ghostDropdown")   
+            +ghostDropdown("Dropdown","Default")(class="formElements__ghostDropdown")   
+            +exp-checkbox-list("Expendable checkbox list")

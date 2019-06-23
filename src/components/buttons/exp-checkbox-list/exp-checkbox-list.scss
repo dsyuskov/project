@@ -1,0 +1,10 @@
+@import '../checkbox-button/checkbox-button.scss';
+.exp-checkbox-list__caption{    
+    background: url("../images/expand_more.svg") no-repeat;
+    background-position: right 15px top 50%; 
+    cursor: pointer;  
+    margin-bottom: 15px;
+}
+.expCheckboxList__checkbox-button{
+    margin-bottom: 7.3px;
+}

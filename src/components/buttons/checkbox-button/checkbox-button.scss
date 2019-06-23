@@ -2,7 +2,8 @@
     font-family: Montserrat, sans-serif;
     display: inline-block;   
     box-sizing: border-box;
-    height: 24px;
+    height: 20px;
+    width:100%;
     position: relative;
     padding-left: 30px;        
     margin-bottom: 0px;
@@ -23,7 +24,7 @@
     height: 0;
     width: 0;
   }
-
+//нарисованный чекбокс
 .chebox-button__checkmark{
     box-sizing: border-box;
     position: absolute;

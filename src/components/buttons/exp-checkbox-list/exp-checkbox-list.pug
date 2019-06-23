@@ -1,0 +1,14 @@
+include ../checkbox-button/checkbox-button.pug
+
+mixin exp-checkbox-list(fieldCaption)
+    div.exp-checkbox-list(class!=attributes.class)
+        h3.exp-checkbox-list__caption= fieldCaption        
+        div(id="expCheckboxList")            
+            +checkbox-button("breakfast","Завтрак",flase)(class="expCheckboxList__checkbox-button")
+            +checkbox-button("desk","Письменный стол",true)(class="expCheckboxList__checkbox-button")
+            +checkbox-button("chair","Стул для кормления",true)(class="expCheckboxList__checkbox-button")
+            +checkbox-button("bed","Кроватка",true)(class="expCheckboxList__checkbox-button")
+            +checkbox-button("tv","Телевизор",flase)(class="expCheckboxList__checkbox-button")
+            +checkbox-button("shampoo","Шампунь",flase)(class="expCheckboxList__checkbox-button")
+            +checkbox-button("tv","Телевизор",flase)(class="expCheckboxList__checkbox-button")
+            +checkbox-button("shampoo","Шампунь",flase)(class="expCheckboxList__checkbox-button")
