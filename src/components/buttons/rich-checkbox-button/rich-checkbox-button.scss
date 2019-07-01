@@ -1,0 +1,13 @@
+@import "../checkbox-button/checkbox-button.scss";
+
+.rich-checkbox-button label{
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+
+}
+.rich-checkbox-button div{    
+    padding-left: 30px;    
+    font-size: 12px;
+    line-height: 14px;
+}

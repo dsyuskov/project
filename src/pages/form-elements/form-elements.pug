@@ -9,6 +9,7 @@ include ../../components/buttons/like-button/like-button.pug
 include ../../components/buttons/rate-button/rate-button.pug
 include ../../components/buttons/button/button.pug
 include ../../components/buttons/exp-checkbox-list/exp-checkbox-list.pug
+include ../../components/buttons/rich-checkbox-button/rich-checkbox-button.pug
 div.formElements
     div.logo.formElements__logo          
     div.formElements__Block1
@@ -25,7 +26,7 @@ div.formElements
         div.formElements__column2
             div.formElements__checkbox-buttons
                 h3 Checkbox buttons
-                +checkbox-button("smoke","Можно курить",flase)(class="formElements__checkbox-button")
+                +checkbox-button("smoke","Можно курить",false)(class="formElements__checkbox-button")
                 +checkbox-button("pets","Можно с питомцами",true)(class="formElements__checkbox-button")
                 +checkbox-button("ghost","Можно пригласить гостей<br>(до 10 человек)",true)(class="formElements__checkbox-button")                
             div.formElements__radio-buttons
@@ -69,3 +70,9 @@ div.formElements
             +ghostDropdown("Dropdown","Default")(class="formElements__ghostDropdown")   
             +ghostDropdown("Dropdown","Default")(class="formElements__ghostDropdown")   
             +exp-checkbox-list("Expendable checkbox list")
+        div.formElements__column5
+            div.formElements__buttons
+                h3 Rich checkbox buttons
+                +rich-checkbox-button("wide-corridor","Широкий коридор",false,"Ширина коридоров в номере<br>не менее 91 см.")(class="formElements__rich-checkbox-button")
+                +rich-checkbox-button("help-invalid","Помощник для инвалидов",false,"На 1 этаже вас встретит специалист<br>и проводит до номера.")(class="formElements__rich-heckbox-button")
+                

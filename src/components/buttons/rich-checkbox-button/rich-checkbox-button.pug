@@ -1,0 +1,5 @@
+include ../checkbox-button/checkbox-button.pug
+mixin rich-checkbox-button(name, caption, checked, information)
+    div.rich-checkbox-button(class!=attributes.class)
+        +checkbox-button(name, caption, checked)
+        div !{information}
