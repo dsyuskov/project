@@ -1,0 +1,16 @@
+.bullet{
+    position: relative;
+    padding-left: 20px;
+    letter-spacing: -0.1px;
+}
+
+.bullet-checkmark{
+    position: absolute;
+    box-sizing: border-box;
+    width:10px;
+    height:10px;
+    border-radius: 50%;
+    background: $dark-shade25;
+    top: 5px;
+    left: 0;
+}

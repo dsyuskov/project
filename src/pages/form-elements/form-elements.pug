@@ -10,6 +10,7 @@ include ../../components/buttons/rate-button/rate-button.pug
 include ../../components/buttons/button/button.pug
 include ../../components/buttons/exp-checkbox-list/exp-checkbox-list.pug
 include ../../components/buttons/rich-checkbox-button/rich-checkbox-button.pug
+include ../../components/bullet-list/bullet-list.pug
 div.formElements
     div.logo.formElements__logo          
     div.formElements__Block1
@@ -71,8 +72,13 @@ div.formElements
             +ghostDropdown("Dropdown","Default")(class="formElements__ghostDropdown")   
             +exp-checkbox-list("Expendable checkbox list")
         div.formElements__column5
-            div.formElements__buttons
+            div.formElements__rich-checkbox-button
                 h3 Rich checkbox buttons
                 +rich-checkbox-button("wide-corridor","Широкий коридор",false,"Ширина коридоров в номере<br>не менее 91 см.")(class="formElements__rich-checkbox-button")
                 +rich-checkbox-button("help-invalid","Помощник для инвалидов",false,"На 1 этаже вас встретит специалист<br>и проводит до номера.")(class="formElements__rich-heckbox-button")
-                
+        div.formElements__column6
+            div.formElements__bullet-list
+                h3 Bullet list
+                +bullet("Нельзя с питомцами")(class="formElements__bullet-list")
+                +bullet("Без вечеринок и мероприятий")(class="formElements__bullet-list")
+                +bullet("Время прибытия &mdash; после 13:00,<br>а выезд до 12:00")(class="formElements__bullet-list")
