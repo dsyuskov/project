@@ -1,0 +1,27 @@
+.about-number{    
+    border-bottom: 1px solid $dark-shade10;
+    padding-bottom:20px;
+}
+.about-number__img{    
+    margin-top: 5px;
+    margin-left: 4px;
+    width: 40px;
+    height: 40px;
+    
+    float:left;
+    margin-right: 13px;
+}
+.cityicon{
+    src: url("../images/emoticon.svg");    
+}
+
+.about-number__content{
+    float:left;
+}
+.about-number__content-caption{
+    font-weight: bold;
+    color: $dark-shade75;
+}
+.clearfix{
+    clear: both;
+}

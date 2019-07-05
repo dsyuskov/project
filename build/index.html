@@ -1,175 +1,28 @@
-<!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <title>Hello World</title>
-  </head>
-  <body>    
-    <!--include ../reg-account/reg-account.pug-->
-    <!--include ../find-number/find-number.pug-->
-    <!--include ../colors-and-types/colors-and-types.pug-->
-    <!--label.find-dropdown__label Прибытиеinput.find-dropdown__input-come(type="text" id="datepicker-here-begin" autoclose="true" data-position="bottom left" placeholder="ДД.ММ.ГГ")
-    -->
-    <!--label.find-dropdown__label Выездinput.find-dropdown__input-come(type="text" id="datepicker-here-end" data-position="bottom left" placeholder="ДД.ММ.ГГ")    
-    -->
-    <div class="formElements">
-      <div class="logo formElements__logo">          </div>
-      <div class="formElements__column1">
-            <div class="input formElements__inputDefault">
-              <h3 class="field__caption">Text field</h3>
-              <h3 class="field__type">Default</h3>
-              <input class="field" placeholder="Email" type="Email" name="Email">
-            </div>
-            <div class="input formElements__inputHover">
-              <h3 class="field__caption">Text field</h3>
-              <h3 class="field__type">Hover / Focus</h3>
-              <input class="field" placeholder="This is pretty awesome">
-            </div>
-            <div class="ghostDropdown formElements__ghostDropdown">
-              <h3 class="field__caption">Dropdown</h3>
-              <h3 class="field__type">Default</h3>
-              <input class="field dropdown" type="text" readonly>
-              <div id="ghostDropdownList">           
-                    <div class="ghostDropdownLine">
-                      <h3 class="ghostDropdownLine__caption">Взрослые</h3>
-                      <div class="ghostDropdownLine__counter">
-                        <button class="ghostDropdownLine__button" type="button">-            </button>
-                        <h3 class="ghostDropdownLine__value">2</h3>
-                        <button class="ghostDropdownLine__button" type="button">+</button>
-                      </div>
-                    </div>
-                    <div class="ghostDropdownLine">
-                      <h3 class="ghostDropdownLine__caption">Дети</h3>
-                      <div class="ghostDropdownLine__counter">
-                        <button class="ghostDropdownLine__button" type="button">-            </button>
-                        <h3 class="ghostDropdownLine__value">2</h3>
-                        <button class="ghostDropdownLine__button" type="button">+</button>
-                      </div>
-                    </div>
-                    <div class="ghostDropdownLine">
-                      <h3 class="ghostDropdownLine__caption">Младенцы</h3>
-                      <div class="ghostDropdownLine__counter">
-                        <button class="ghostDropdownLine__button" type="button">-            </button>
-                        <h3 class="ghostDropdownLine__value">2</h3>
-                        <button class="ghostDropdownLine__button" type="button">+</button>
-                      </div>
-                    </div>
-                <div class="ghostDropdownLineButton">
-                  <button class="clear-no-border-button">Очистить</button>
-                  <button class="apply-no-border-button">Применить</button>
-                </div>
-              </div>
-            </div>
-            <div class="input formElements__inputMasked">
-              <h3 class="field__caption">Masked text field</h3>
-              <h3 class="field__type">Default</h3>
-              <input class="field">
-            </div>
-        <div class="formElements__date-dropdown">
-              <div class="date-dropdown date-dropdown-begin">
-                <h3 class="field__caption">Date dropdown</h3>
-                <input class="field dropdown">
-              </div>
-              <div class="date-dropdown date-dropdown-end">
-                <h3 class="field__caption">Date dropdown</h3>
-                <input class="field dropdown">
-              </div>
-        </div>
-            <div class="filter-date-dropdown formElements__filterDateDropdown">
-              <h3 class="field__caption">Filter date dropdown</h3>
-              <input class="field dropdown">
-            </div>
-            <div class="subscription formElements__subscriptionField">
-              <h3 class="field__caption">Subscription text field</h3>
-              <div class="subscription__container">
-                <input class="field subscription__input" placeholder="Email">
-                <button class="subscription__button"></button>
-              </div>
-            </div>
-      </div>
-      <div class="formElements__column2">
-        <div class="formElements__checkbox-buttons">
-          <h3>Checkbox buttons</h3>
-              <label class="chebox-button formElements__checkbox-button">Можно курить
-                <input class="checkbox-button__input" type="checkbox" name="smoke"><span class="chebox-button__checkmark"></span>
-              </label>
-              <label class="chebox-button formElements__checkbox-button">Можно с питомцами
-                <input class="checkbox-button__input" type="checkbox" name="pets" checked><span class="chebox-button__checkmark"></span>
-              </label>
-              <label class="chebox-button formElements__checkbox-button">Можно пригласить гостей<br>(до 10 человек)
-                <input class="checkbox-button__input" type="checkbox" name="ghost" checked><span class="chebox-button__checkmark"></span>
-              </label>
-        </div>
-        <div class="formElements__radio-buttons">
-          <h3>Radio buttons     </h3>
-              <label class="radio-button radio-button--man">Мужчина
-                <input class="radio-button__input" type="radio" name="sex" checked><span class="radio-button__checkmark"></span>
-              </label>
-              <label class="radio-button radio-button--woman">Женщина
-                <input class="radio-button__input" type="radio" name="sex"><span class="radio-button__checkmark"></span>
-              </label>
-        </div>
-        <div class="formElements__toggle-buttons">
-          <h3>Toggle</h3>
-              <label class="toggle-button formElements__toggle-button">Получать спецпредложения    
-                <input class="toggle-button__input" type="checkbox" name="onoffswitch" checked><span class="toggle-button__checkmark"></span>
-              </label>
-              <label class="toggle-button formElements__toggle-button">Получать спецпредложения    
-                <input class="toggle-button__input" type="checkbox" name="onoffswitch"><span class="toggle-button__checkmark"></span>
-              </label>
-        </div>
-        <div class="formElements__like-buttons">     
-          <h3>Like button               </h3>
-              <button class="like-button like-button--no-active formElements__like-button"><span class="like-button__heart"></span><span class="like-button__counter">2</span></button>
-              <button class="like-button like-button--active formElements__like-button"><span class="like-button__heart"></span><span class="like-button__counter">12</span></button>
-        </div>
-        <div class="formElements__rate-buttons">
-          <h3>Rate button            </h3>
-              <div class="rate-button formElements__rate-button"><img src="images/star.svg" alt="rating-star"><img src="images/star.svg" alt="rating-star"><img src="images/star.svg" alt="rating-star"><img src="images/star.svg" alt="rating-star"><img src="images/star_border.svg" alt="rating-star">
-              </div>
-              <div class="rate-button formElements__rate-button"><img src="images/star.svg" alt="rating-star"><img src="images/star.svg" alt="rating-star"><img src="images/star.svg" alt="rating-star"><img src="images/star.svg" alt="rating-star"><img src="images/star.svg" alt="rating-star">
-              </div>
-        </div>
-      </div>
-      <div class="formElements__column3">
-        <div class="formElements__range-slider">
-          <h3>Range slider</h3><p>
-<label for="amount">Price range:</label>
-<input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
-</p>
-<div id="slider-range"></div>
-        </div>
-        <div class="formElements__buttons">
-          <h3>buttons</h3>
-          <div class="formElements__button">
-                <button class="button">Click me</button>
-                <button class="button hover-button">Click me</button>
-          </div>
-          <div class="formElements__border-button">
-                <button class="button border-button">click me</button>
-                <button class="button border-button hover-border-button">click me</button>
-          </div>
-          <div class="formElements__no-border-button">
-                <button class="apply-no-border-button">click me</button>
-                <button class="clear-no-border-button">click me</button>
-          </div>
-          <div class="formElements__arrow-button">
-                <button class="button arrow-button">Перейти к оплате</button>
-          </div>
-        </div>
-        <div class="formElements__pagination">
-          <h3>Pagination</h3>
-<ul class="pagination">
-  <li class="pagination__item pagination__item_active">1</li>
-  <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
-  <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
-  <li class="pagination__item"><a class="pagination__link" href="#">...</a></li>
-  <li class="pagination__item"><a class="pagination__link" href="#">15</a></li>
-  <li class="pagination__item"><a class="pagination__link pagination__link_forward" href="#">&nbsp;</a></li>
-</ul>
-<label class="pagination__label">1 - 12 из 100+ вариантов аренды</label>
-        </div>
-      </div>
-    </div>
-  <script type="text/javascript" src="./js/index.js"></script></body>
-</html>
+Html Webpack Plugin:
+<pre>
+  Error: /home/int/project/src/components/about-number/about-number.pug:4
+      2|     div.about-number
+      3|         //img.about-number__img(src=require("../images/emoticon.svg"))
+    > 4|         img.about-number__img( src=require(img) )
+      5|         div.about-number__content
+      6|             div.about-number__content-caption !{caption}
+      7|             div.about-number__content-context !{context}
+  Cannot find module '../images/emoticon.svg'
+  
+  
+  - index.pug:672 Object.pug_interp [as about-number]
+    [.]/[html-webpack-plugin]/lib/loader.js!./src/pages/index.pug:672:134
+  
+  - index.pug:1046 eval
+    [.]/[html-webpack-plugin]/lib/loader.js!./src/pages/index.pug:1046:27
+  
+  - index.pug:1049 template
+    [.]/[html-webpack-plugin]/lib/loader.js!./src/pages/index.pug:1049:341
+  
+  - index.js:284 Promise.resolve.then
+    [project]/[html-webpack-plugin]/index.js:284:18
+  
+  - next_tick.js:68 process._tickCallback
+    internal/process/next_tick.js:68:7
+  
+</pre>

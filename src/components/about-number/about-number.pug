@@ -1,0 +1,7 @@
+mixin about-number(img, caption, context)      
+    div.about-number        
+        img.about-number__img(class!= img) 
+        div.about-number__content
+            div.about-number__content-caption !{caption}
+            div.about-number__content-context !{context}
+        div.clearfix         

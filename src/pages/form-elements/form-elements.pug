@@ -11,6 +11,7 @@ include ../../components/buttons/button/button.pug
 include ../../components/buttons/exp-checkbox-list/exp-checkbox-list.pug
 include ../../components/buttons/rich-checkbox-button/rich-checkbox-button.pug
 include ../../components/bullet-list/bullet-list.pug
+include ../../components/about-number/about-number.pug
 div.formElements
     div.logo.formElements__logo          
     div.formElements__Block1
@@ -82,3 +83,11 @@ div.formElements
                 +bullet("Нельзя с питомцами")(class="formElements__bullet-list")
                 +bullet("Без вечеринок и мероприятий")(class="formElements__bullet-list")
                 +bullet("Время прибытия &mdash; после 13:00,<br>а выезд до 12:00")(class="formElements__bullet-list")
+    div.formElements__Block3
+        div.formElements__column7
+            div.formElements__about-number                            
+                +about-number("emoticon", "Комфорт", "Шумопоглащающие стены")
+                +about-number("cityicon", "Удобство", "Окно в каждой из спален")
+        div.formElements__column8                
+            div.formElements__comment                            
+                include ../../components/comment/comment.pug

@@ -13,6 +13,9 @@
 @import '../../components/buttons/exp-checkbox-list/exp-checkbox-list.scss';
 @import '../../components/buttons/rich-checkbox-button/rich-checkbox-button.scss';
 @import '../../components/bullet-list/bullet-list.scss';
+@import '../../components/about-number/about-number.scss';
+@import '../../components/comment/comment.scss';
+
 
 .formElements{
     width: 1440px;
@@ -35,6 +38,13 @@
     margin-top: 97px;
     float: left;
     //border: 1px dashed green;
+}
+
+.formElements__Block3{
+    margin-left:132px;
+    margin-top: 97px;
+    margin-bottom: 100px;
+    float: left;
 }
 .formElements__column1{
     float: left;
@@ -75,6 +85,14 @@
     margin-left: 73px;
 }
 
+.formElements__column7{
+    float: left;
+    width: 280px;
+}
+.formElements__column8{
+    float: left;
+    width: 710px;
+}
 .formElements__inputDefault{
     margin-bottom: 17px;
 }
