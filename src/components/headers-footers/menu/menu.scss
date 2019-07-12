@@ -1,0 +1,29 @@
+.header-menu{
+    display: block;
+    list-style: none;    
+    padding: 0;        
+}
+
+.header-menu__item{
+    display: inline-block;
+    white-space: nowrap;
+    padding-right: 25px;
+    
+}
+.header-menu__item a{
+    display: block;
+    text-decoration: none;
+    color: $dark-shade50;
+    
+}
+.header-menu a:visited{
+    color: $dark-shade50;
+}
+.exp{
+    padding-right:21px;  
+}
+
+.exp a:after{
+    margin-left: 4px;
+    content: url("../images/expand_more.svg");       
+}

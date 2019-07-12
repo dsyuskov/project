@@ -17,8 +17,8 @@
     @include button-reset;
     @include button-font;
     border-radius: 22px;
-    height: 44px;
-    width: 99px;     
+    height: 44px;    
+    padding: 0 21px;
     background: $purple-gradient;
 }
 
@@ -39,6 +39,7 @@
 
 .border-button {  
     position: relative;    
+    padding: 0 19px;
     color: $purple;
     background: $background;
     $border: 2px;
