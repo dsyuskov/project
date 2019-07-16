@@ -1,0 +1,11 @@
+include ../menu/menu.pug
+mixin header(isLogged)
+    div.header
+        div.header--left
+            img.header__logo-toxin(src= require('../images/logo.png'), alt="logo")
+        div.header--right
+            if isLogged
+                +menu(false)(class="header__menu")
+            else
+                +menu(true)(class="header__menu")
+            

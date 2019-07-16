@@ -1,29 +1,45 @@
+@import "../../buttons/button/button.scss";
 .header-menu{
-    display: block;
+    display: flex;
+    position: relative;
     list-style: none;    
-    padding: 0;        
+    padding: 0;       
+    background: white;
+    z-index: 20;
 }
 
 .header-menu__item{
     display: inline-block;
-    white-space: nowrap;
-    padding-right: 25px;
-    
+    white-space: nowrap;        
+    margin: auto 0;
+    margin-left: 30px;
 }
+
 .header-menu__item a{
     display: block;
     text-decoration: none;
     color: $dark-shade50;
-    
 }
+
+.header-menu__item--active a{
+    font-weight: bold;
+    color: $dark-shade75;
+}
+
 .header-menu a:visited{
     color: $dark-shade50;
 }
-.exp{
-    padding-right:21px;  
+.header-menu__item--expand{
+    margin-right: -3px;  
 }
 
-.exp a:after{
-    margin-left: 4px;
+.header-menu__item--expand a:after{
+    margin-left: 2px;
     content: url("../images/expand_more.svg");       
+}
+.separator{
+    width: 0px;
+    height: 30px;
+    border-left: 1px solid $dark-shade10;
+    margin: auto 0;
 }

@@ -1,10 +1,11 @@
-mixin menu
+include ../../buttons/button/button.pug
+mixin menu(isLogged)
     ul.header-menu(class!=attributes.class)
-        li.header-menu__item
+        li.header-menu__item.header-menu__item--active
             a(href="#") Home
         li.header-menu__item 
             a(href="#") About Us
-        li.header-menu__item.exp
+        li.header-menu__item.header-menu__item--expand
             a(href="#") Services
         li.header-menu__item
             a(href="#") Careers
@@ -12,3 +13,13 @@ mixin menu
             a(href="#") News
         li.header-menu__item
             a(href="#") Documentation
+        if isLogged
+            li.header-menu__item
+                div.separator
+            li.header-menu__item
+                a(href="#") Cosmin Negoita
+        else
+            li.header-menu__item
+                div.header__buttons
+                    +border-button("Login")(class="header-buttons")
+                    +button("Register")(class="header-buttons")
