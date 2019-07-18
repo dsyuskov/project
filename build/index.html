@@ -1,28 +1,93 @@
-Html Webpack Plugin:
-<pre>
-  Error: /home/int/project/src/components/about-number/about-number.pug:4
-      2|     div.about-number
-      3|         //img.about-number__img(src=require("../images/emoticon.svg"))
-    > 4|         img.about-number__img( src=require(img) )
-      5|         div.about-number__content
-      6|             div.about-number__content-caption !{caption}
-      7|             div.about-number__content-context !{context}
-  Cannot find module '../images/emoticon.svg'
-  
-  
-  - index.pug:672 Object.pug_interp [as about-number]
-    [.]/[html-webpack-plugin]/lib/loader.js!./src/pages/index.pug:672:134
-  
-  - index.pug:1046 eval
-    [.]/[html-webpack-plugin]/lib/loader.js!./src/pages/index.pug:1046:27
-  
-  - index.pug:1049 template
-    [.]/[html-webpack-plugin]/lib/loader.js!./src/pages/index.pug:1049:341
-  
-  - index.js:284 Promise.resolve.then
-    [project]/[html-webpack-plugin]/index.js:284:18
-  
-  - next_tick.js:68 process._tickCallback
-    internal/process/next_tick.js:68:7
-  
-</pre>
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Hello World</title>
+  </head>
+  <body>    
+    <!--include ../reg-account/reg-account.pug-->
+    <!--include ../find-number/find-number.pug-->
+    <!--include ../colors-and-types/colors-and-types.pug-->
+    <!--include ./form-elements/form-elements.pug-->
+        <div class="header headers-footers__header__out"><img class="header__logo-toxin" src="images/logo.png" alt="logo">
+              <ul class="menu header__menu">
+                <li class="menu__item menu__item_active"><a href="#">Home</a></li>
+                <li class="menu__item"><a href="#">About Us</a></li>
+                <li class="menu__item menu__item_expand"><a href="#">Services</a></li>
+                <li class="menu__item"><a href="#">Careers</a></li>
+                <li class="menu__item"><a href="#">News</a></li>
+                <li class="menu__item"><a href="#">Documentation</a></li>
+                <li class="menu__item">
+                  <!--div.header__buttons-->
+                      <button class="button border-button header__button header__button-border">Login</button>
+                      <button class="button header__button">Register</button>
+                </li>
+              </ul>
+        </div>
+        <div class="header headers-footers__header__in"><img class="header__logo-toxin" src="images/logo.png" alt="logo">
+              <ul class="menu header__menu">
+                <li class="menu__item menu__item_active"><a href="#">Home</a></li>
+                <li class="menu__item"><a href="#">About Us</a></li>
+                <li class="menu__item menu__item_expand"><a href="#">Services</a></li>
+                <li class="menu__item"><a href="#">Careers</a></li>
+                <li class="menu__item"><a href="#">News</a></li>
+                <li class="menu__item"><a href="#">Documentation</a></li>
+                <li class="menu__item">
+                  <div class="menu__separator"></div>
+                </li>
+                <li class="menu__item"><a href="#">Cosmin Negoita</a></li>
+              </ul>
+        </div>
+    <div class="footer headers-footers__footer">
+      <div class="column column1"><img class="footer__logo-toxin" src="images/logo.png" alt="logo">
+        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.</p>
+      </div>
+      <div class="column column2">
+            <ul class="menu footer__menu">
+              <!--первый элемент списка заголовок-->
+              <li class="menu__item"> 
+                <h3>Navigation</h3>
+              </li>
+              <li class="menu__item"><a href="#">About Us</a></li>
+              <li class="menu__item"><a href="#">News</a></li>
+              <li class="menu__item"><a href="#">Support</a></li>
+              <li class="menu__item"><a href="#">Products</a></li>
+            </ul>
+      </div>
+      <div class="column column3">
+            <ul class="menu footer__menu">
+              <!--первый элемент списка заголовок-->
+              <li class="menu__item"> 
+                <h3>About Us</h3>
+              </li>
+              <li class="menu__item"><a href="#">Who we are</a></li>
+              <li class="menu__item"><a href="#">Our team</a></li>
+              <li class="menu__item"><a href="#">Careers</a></li>
+              <li class="menu__item"><a href="#">Investors</a></li>
+            </ul>
+      </div>
+      <div class="column column4">
+            <ul class="menu footer__menu">
+              <!--первый элемент списка заголовок-->
+              <li class="menu__item"> 
+                <h3>Support</h3>
+              </li>
+              <li class="menu__item"><a href="#">Documentation</a></li>
+              <li class="menu__item"><a href="#">Community</a></li>
+              <li class="menu__item"><a href="#">Get in Touch</a></li>
+            </ul>
+      </div>
+      <div class="column column5">
+        <h3>Subscribe to our newsletter</h3>
+        <p>Receive our latest news and promotions in your inbox!</p>
+            <div class="subscription footer__subscription">
+              <h3 class="field__caption"></h3>
+              <div class="subscription__container">
+                <input class="field subscription__input">
+                <button class="subscription__button"></button>
+              </div>
+            </div>
+      </div>
+    </div>
+  <script type="text/javascript" src="./js/index.js"></script></body>
+</html>
