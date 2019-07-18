@@ -1,43 +1,29 @@
 @import "../../buttons/button/button.scss";
-.header-menu{
+.menu{
     display: flex;
-    position: relative;
     list-style: none;    
-    padding: 0;       
-    background: white;
-    z-index: 20;
+    padding: 0;           
+    margin: 0;
 }
 
-.header-menu__item{
-    display: inline-block;
-    white-space: nowrap;        
-    margin: auto 0;
-    margin-left: 30px;
-}
-
-.header-menu__item a{
-    display: block;
+.menu__item a{    
     text-decoration: none;
     color: $dark-shade50;
 }
-
-.header-menu__item--active a{
+.menu__item_active a{
     font-weight: bold;
     color: $dark-shade75;
 }
 
-.header-menu a:visited{
-    color: $dark-shade50;
-}
-.header-menu__item--expand{
+.menu__item_expand{
     margin-right: -3px;  
 }
 
-.header-menu__item--expand a:after{
+.menu__item_expand a:after{
     margin-left: 2px;
     content: url("../images/expand_more.svg");       
 }
-.separator{
+.menu__separator{
     width: 0px;
     height: 30px;
     border-left: 1px solid $dark-shade10;

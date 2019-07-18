@@ -1,6 +1,18 @@
 @import "../../components/headers-footers/header/header.scss";
+@import "../../components/headers-footers/footer/footer.scss";
 
 body{
     background: $background-gray;
     width: 1440px;    
+}
+ 
+.headers-footers__header__out{
+    margin-top:150px;
+}
+.headers-footers__header__in{
+    margin-top: 40px;
+}
+
+.headers-footers__footer{
+    margin-top: 40px;
 }

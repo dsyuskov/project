@@ -14,22 +14,17 @@
 .header__logo-toxin{        
     margin: auto 0;    
 }
-.header__buttons{
-    margin: auto 0;
-    margin-right: -17px;
-}
-.header-buttons{
-    height: 34px;
-    margin-right:17px;
+
+.header__button{
+    height: 34px;    
 }
 
-
-.header--left{
-    display: flex;
-    margin: auto 0;    
+.header__button-border{
+    margin-right:16px;
 }
-.header--right{
-    display: flex;
-    margin: auto 0;        
-    justify-content: space-between;
+
+.header__menu > .menu__item{    
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 30px;
 }

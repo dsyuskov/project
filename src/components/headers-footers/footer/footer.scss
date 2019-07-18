@@ -1,0 +1,35 @@
+@import '../../../components/fields/field.scss';
+@import "../../../components/fields/subscription/subscription.scss";
+.footer{
+    display: flex;
+    background: $background;    
+    padding: 100px 140px;
+    justify-content:space-between;
+}
+.footer h3{
+    letter-spacing: -0.2px;
+}
+.column{    
+    width: 160px;        
+    padding-top: 5px;       
+}
+.column1, .column5{
+    width: 260px;
+}
+.column1{
+    padding-top: 0;
+}
+.footer__menu{
+    flex-direction: column;    
+}
+
+.footer__menu > .menu__item{
+    margin-bottom: 15px;
+}
+
+.column1 p {
+    margin-top: 10px;
+}
+.column5 p {
+    margin-top:18px;     
+}

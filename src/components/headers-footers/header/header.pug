@@ -1,11 +1,19 @@
 include ../menu/menu.pug
+- 
+    var navigation = [        
+        {text: "Home", link: "#", class: "menu__item_active"},
+        {text: "About Us", link: "#"},
+        {text: "Services", link: "#", class: "menu__item_expand"},
+        {text: "Careers", link: "#"},
+        {text: "News", link: "#"},
+        {text: "Documentation", link: "#"}
+    ]
+-var user = "Cosmin Negoita"
 mixin header(isLogged)
-    div.header
-        div.header--left
-            img.header__logo-toxin(src= require('../images/logo.png'), alt="logo")
-        div.header--right
-            if isLogged
-                +menu(false)(class="header__menu")
-            else
-                +menu(true)(class="header__menu")
+    div.header(class!=attributes.class)
+        img.header__logo-toxin(src= require('../images/logo.png'), alt="logo")
+        if isLogged
+            +header-menu(false, navigation, user)
+        else
+            +header-menu(true, navigation, user)
             

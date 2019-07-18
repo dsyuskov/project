@@ -1,25 +1,25 @@
 include ../../buttons/button/button.pug
-mixin menu(isLogged)
-    ul.header-menu(class!=attributes.class)
-        li.header-menu__item.header-menu__item--active
-            a(href="#") Home
-        li.header-menu__item 
-            a(href="#") About Us
-        li.header-menu__item.header-menu__item--expand
-            a(href="#") Services
-        li.header-menu__item
-            a(href="#") Careers
-        li.header-menu__item
-            a(href="#") News
-        li.header-menu__item
-            a(href="#") Documentation
+mixin header-menu(isLogged,listObject,user)
+    ul.menu.header__menu
+        each listItem in listObject
+            li.menu__item(class!=listItem.class)
+                a(href= listItem.link)= listItem.text            
         if isLogged
-            li.header-menu__item
-                div.separator
-            li.header-menu__item
-                a(href="#") Cosmin Negoita
+            li.menu__item
+                div.menu__separator
+            li.menu__item
+                a(href="#")= user
         else
-            li.header-menu__item
-                div.header__buttons
-                    +border-button("Login")(class="header-buttons")
-                    +button("Register")(class="header-buttons")
+            li.menu__item
+                //div.header__buttons
+                +border-button("Login")(class="header__button header__button-border")
+                +button("Register")(class="header__button")
+
+mixin footer-menu(title, listObject)
+    ul.menu.footer__menu
+        //первый элемент списка заголовок
+        li.menu__item 
+            h3= title
+        each listItem in listObject
+            li.menu__item
+                a(href= listItem.link)= listItem.text

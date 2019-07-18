@@ -1,0 +1,35 @@
+include ../menu/menu.pug
+include ../../../components/fields/subscription/subscription.pug
+- 
+    var navigation = [        
+        {text: "About Us", link: "#"},
+        {text: "News", link: "#"},
+        {text: "Support", link: "#"},
+        {text: "Products", link: "#"}
+    ]
+    var about = [        
+        {text: "Who we are", link: "#"},
+        {text: "Our team", link: "#"},
+        {text: "Careers", link: "#"},
+        {text: "Investors", link: "#"},
+    ]
+    var support = [
+        {text: "Documentation", link: "#"},
+        {text: "Community", link: "#"},
+        {text: "Get in Touch", link: "#"},
+
+    ]
+div.footer.headers-footers__footer
+    div.column.column1
+        img.footer__logo-toxin(src= require('../images/logo.png'), alt="logo")        
+        p Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.
+    div.column.column2
+        +footer-menu("Navigation", navigation)
+    div.column.column3
+        +footer-menu("About Us", about)
+    div.column.column4
+        +footer-menu("Support", support)
+    div.column.column5
+        h3 Subscribe to our newsletter
+        p Receive our latest news and promotions in your inbox!
+        +subscription(class="footer__subscription")
